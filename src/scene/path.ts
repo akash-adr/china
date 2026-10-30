@@ -10,7 +10,7 @@
  * path (no stalling, no backtracking) while the *rate* varies.
  */
 import * as THREE from 'three';
-import { CHAPTERS, CHAPTER_RANGES, type Chapter } from '@/config/chapters';
+import { CHAPTERS, CHAPTER_RANGES, resolveHoldAt, type Chapter } from '@/config/chapters';
 
 const smoothstep = (a: number, b: number, x: number) => {
   const t = Math.min(1, Math.max(0, (x - a) / (b - a)));
@@ -18,24 +18,24 @@ const smoothstep = (a: number, b: number, x: number) => {
 };
 
 /** 1 normally, dipping to `slow` inside the hold window, with soft shoulders. */
-function speedAt(u: number, hold: Chapter['hold']): number {
+function speedAt(u: number, hold: Chapter['hold'], at: number): number {
   const half = hold.width / 2;
   const ramp = Math.max(1e-3, half * 0.6);
-  const rise = smoothstep(hold.at - half - ramp, hold.at - half, u);
-  const fall = 1 - smoothstep(hold.at + half, hold.at + half + ramp, u);
+  const rise = smoothstep(at - half - ramp, at - half, u);
+  const fall = 1 - smoothstep(at + half, at + half + ramp, u);
   return 1 - (1 - hold.slow) * Math.min(rise, fall);
 }
 
 const LUT_SIZE = 257;
 
 /** Monotonic u -> v lookup for one chapter, from its speed profile. */
-function buildHoldLut(hold: Chapter['hold']): Float32Array {
+function buildHoldLut(hold: Chapter['hold'], at: number): Float32Array {
   const lut = new Float32Array(LUT_SIZE);
   let acc = 0;
   for (let i = 1; i < LUT_SIZE; i++) {
     const u0 = (i - 1) / (LUT_SIZE - 1);
     const u1 = i / (LUT_SIZE - 1);
-    acc += ((speedAt(u0, hold) + speedAt(u1, hold)) / 2) * (u1 - u0);
+    acc += ((speedAt(u0, hold, at) + speedAt(u1, hold, at)) / 2) * (u1 - u0);
     lut[i] = acc;
   }
   for (let i = 0; i < LUT_SIZE; i++) lut[i] /= acc || 1;
@@ -81,7 +81,7 @@ export const lookCurve = new THREE.CatmullRomCurve3(
 
 const cameraSpans = buildSpans(counts);
 const lookSpans = buildSpans(lookCounts);
-const holdLuts = CHAPTERS.map((c) => buildHoldLut(c.hold));
+const holdLuts = CHAPTERS.map((c, i) => buildHoldLut(c.hold, resolveHoldAt(i)));
 
 /**
  * Map global scroll progress to a curve parameter, applying the chapter's hold.

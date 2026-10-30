@@ -45,11 +45,20 @@ export interface Chapter {
   /** Look-at keypoints. Independent of position, so the camera can orbit. */
   lookAt: Vec3[];
   /**
-   * The hero beat. `at` is 0–1 within the chapter; `width` how much of the
-   * chapter it occupies; `slow` the speed multiplier inside it (0.2 = a fifth
-   * of normal pace, so the camera nearly stops).
+   * The hero beat.
+   *
+   * `on` is the KEYPOINT the camera should be sitting on when it slows —
+   * not a scroll position. That distinction matters: slowing one window makes
+   * everything outside it proportionally faster, so a hold "at 0.78 of the
+   * scroll" lands at 0.91 of the path. Twice now that has silently put a hero
+   * frame in the hand-off to the next chapter. Naming the keypoint and solving
+   * for the scroll position (see resolveHoldAt) makes that impossible.
+   *
+   * `width` is how much of the chapter's scroll the hold occupies (0.3–0.4
+   * reads as a real pause); `slow` is the speed multiplier inside it, where
+   * 0.1 is almost stopped.
    */
-  hold: { at: number; width: number; slow: number };
+  hold: { on: number; width: number; slow: number };
   props: PropPlacement[];
 }
 
@@ -77,8 +86,8 @@ export const CHAPTERS: Chapter[] = [
     // travel, and it doubles as the hand-off to the gate.
     camera: [[0, 1.55, 9], [0, 1.65, 5.2], [0, 1.9, -1.5], [0, 6.0, -16]],
     lookAt: [[0, 1.8, -5], [2.6, 2.0, -7.5], [4.2, 2.0, -7], [0, 2.6, -44]],
-    // Very slow and early — the hold IS the opening, not a pause within it.
-    hold: { at: 0.34, width: 0.4, slow: 0.11 },
+    // On keypoint 1 — the hold IS the opening, not a pause within it.
+    hold: { on: 1, width: 0.4, slow: 0.11 },
     props: [
       // Offset from the camera line: the path runs down x = 0 toward chapter 2.
       { modelId: 'dragon_with_pearl', position: [4.6, 0, -6], rotationY: -0.6, hero: true,
@@ -105,9 +114,8 @@ export const CHAPTERS: Chapter[] = [
     // the opening for the hold.
     lookAt: [[0, 3.4, -110], [-2.6, 1.5, -102.5], [2.6, 1.5, -103.5],
              [0, 3.6, -118], [0, 3.0, -146]],
-    // Lands on the 4th keypoint: framed in the opening, just before pushing
-    // through.
-    hold: { at: 0.64, width: 0.34, slow: 0.2 },
+    // Keypoint 3: framed in the opening, just before pushing through.
+    hold: { on: 3, width: 0.34, slow: 0.2 },
     props: [
       { modelId: 'torri_gate', position: [0, 0, -110], hero: true, hollow: true, label: 'paifang' },
       { modelId: 'stone_lion', position: [-3.6, 0, -103], rotationY: 0.12, label: 'lion' },
@@ -134,8 +142,8 @@ export const CHAPTERS: Chapter[] = [
     // x = +21 as well — that pairing is the reveal.
     lookAt: [[-6, 6, -232], [0, 8, -240], [1, 10, -241], [6, 11, -238],
              [11, 9, -235]],
-    // Late: the hero frame is the rise that reveals both buildings together.
-    hold: { at: 0.78, width: 0.36, slow: 0.26 },
+    // Keypoint 4: the high framing that takes in both buildings.
+    hold: { on: 4, width: 0.36, slow: 0.26 },
     props: [
       { modelId: 'chinese_pagoda', position: [0, 0, -240], hero: true, label: 'pagoda' },
       { modelId: 'fantasy_style_tree', position: [21, 0, -229], rotationY: 0.6, label: 'ginkgo' },
@@ -168,7 +176,7 @@ export const CHAPTERS: Chapter[] = [
     // is the point: the remaining third of the scroll has to cover the push-in
     // AND the exit, so the camera leaves fast. The speed profile only slows —
     // every "sudden" move on the site is a release out of a hold.
-    hold: { at: 0.48, width: 0.34, slow: 0.11 },
+    hold: { on: 3, width: 0.34, slow: 0.11 },
     props: [
       // Thin 1.8 m cylinder: exactly where <JinguBang /> will stand.
       { shape: 'cylinder', size: [0.05, 1.8, 0.05], position: [0, 0, -360], hero: true,
@@ -189,14 +197,18 @@ export const CHAPTERS: Chapter[] = [
     // move — the tension. Keypoints 4 and 5 are 24 m higher and 40 m back:
     // the whole reveal happens in the last third of the scroll, which is what
     // makes it the most violent move on the site.
-    camera: [[11, 2.1, -438], [9.5, 2.0, -450], [7.5, 2.3, -462],
-             [-5, 24, -492], [-15, 34, -518]],
+    // The search runs ~13 m off the dragon's flank. Closer than that and a
+    // 40 m body at 2 m eye height is a wall across the whole frame, which
+    // gives the reveal away — nothing can "appear" if it was already filling
+    // the shot.
+    camera: [[22, 2.1, -436], [19, 2.0, -450], [16, 2.4, -462],
+             [0, 26, -492], [-12, 36, -518]],
     // Searching: left, right, left again while low, then tilts up as the
     // camera is yanked backwards.
-    lookAt: [[-9, 2.0, -456], [10, 1.8, -460], [-5, 2.1, -470],
+    lookAt: [[-6, 2.0, -452], [14, 1.8, -464], [-2, 2.2, -470],
              [0, 7, -478], [0, 4, -482]],
-    // Held low and slow through the search, so the release carries everything.
-    hold: { at: 0.46, width: 0.38, slow: 0.15 },
+    // Keypoint 2: the end of the search, immediately before the pull-back.
+    hold: { on: 2, width: 0.38, slow: 0.15 },
     props: [
       // 40 m along Z — the longest object in the world.
       { modelId: 'chinese_dragon', position: [0, 0, -470], hero: true, label: 'dragon' },
@@ -221,7 +233,7 @@ export const CHAPTERS: Chapter[] = [
     // Late and very slow. This is the only hold placed at the chapter's end:
     // everywhere else the hold releases, here it is the ending, so the last
     // stretch of scroll buys almost no movement and the final frame sits still.
-    hold: { at: 0.86, width: 0.34, slow: 0.1 },
+    hold: { on: 3, width: 0.34, slow: 0.1 },
     props: [
       // The 80 m scan, far back — only ever a fogged silhouette.
       // 82 x 80 x 102 m. Pushed far back: at 60 m it fills the frame and reads
@@ -236,6 +248,64 @@ export const CHAPTERS: Chapter[] = [
     ],
   },
 ];
+
+
+/**
+ * How many segments a chapter's scroll covers. Every chapter but the last runs
+ * through to the FIRST keypoint of the next one, so the transition between
+ * chapters belongs to the outgoing chapter and the path has no gaps. That extra
+ * segment is why a chapter's own last keypoint sits at (n-1)/n of its range,
+ * not at 1.0.
+ */
+export function chapterSegments(i: number): number {
+  const n = CHAPTERS[i].camera.length;
+  return i === CHAPTERS.length - 1 ? n - 1 : n;
+}
+
+/**
+ * Solve for the scroll position whose eased value lands on keypoint `hold.on`.
+ *
+ * The easing depends on where the hold is, and where the hold is depends on the
+ * easing, so this is a fixed point. It converges in a handful of iterations
+ * because the mapping is monotonic and close to the identity.
+ */
+export function resolveHoldAt(i: number): number {
+  const c = CHAPTERS[i];
+  const target = c.hold.on / chapterSegments(i);
+  let at = target;
+  for (let k = 0; k < 40; k++) {
+    const v = easedAt(at, at, c.hold.width, c.hold.slow);
+    const err = v - target;
+    if (Math.abs(err) < 1e-4) break;
+    at = Math.min(0.999, Math.max(0.001, at - err * 0.9));
+  }
+  return at;
+}
+
+/** The eased value at scroll position `u`, for a hold centred at `at`. */
+function easedAt(u: number, at: number, width: number, slow: number): number {
+  const smooth = (a: number, b: number, x: number) => {
+    const t = Math.min(1, Math.max(0, (x - a) / (b - a)));
+    return t * t * (3 - 2 * t);
+  };
+  const speed = (x: number) => {
+    const half = width / 2;
+    const ramp = Math.max(1e-3, half * 0.6);
+    const rise = smooth(at - half - ramp, at - half, x);
+    const fall = 1 - smooth(at + half, at + half + ramp, x);
+    return 1 - (1 - slow) * Math.min(rise, fall);
+  };
+  const N = 257;
+  let acc = 0;
+  const cum = [0];
+  for (let k = 1; k < N; k++) {
+    const a = (k - 1) / (N - 1), b = k / (N - 1);
+    acc += ((speed(a) + speed(b)) / 2) * (b - a);
+    cum.push(acc);
+  }
+  const idx = Math.min(N - 1, Math.max(0, Math.round(u * (N - 1))));
+  return cum[idx] / (acc || 1);
+}
 
 export const TOTAL_SCROLL_VH = CHAPTERS.reduce((s, c) => s + c.scrollVh, 0);
 
@@ -260,47 +330,14 @@ export function chapterAt(progress: number): number {
 /** Global progress at a chapter's start / hold centre / end. Used by tests. */
 export function chapterMarks(i: number) {
   const { start, end } = CHAPTER_RANGES[i];
-  const c = CHAPTERS[i];
   return {
     start,
-    hold: start + (end - start) * c.hold.at,
+    hold: start + (end - start) * resolveHoldAt(i),
     end: end - 1e-4,
   };
 }
 
-/**
- * Where each chapter's hold actually lands on its own keypoint list.
- *
- * `hold.at` is expressed in scroll (u), but what matters is which keypoint the
- * camera is near (v), and the two differ because the hold itself warps the
- * mapping. A chapter whose hero is its 3rd of 5 keypoints needs a much earlier
- * `at` than one whose hero is its last. This is exported so the check can run
- * in a test rather than being rediscovered from a contact sheet.
- */
-export function holdKeypoint(i: number): { v: number; nearestKeypoint: number } {
-  const c = CHAPTERS[i];
-  const { at, width, slow } = c.hold;
-  const smooth = (a: number, b: number, x: number) => {
-    const t = Math.min(1, Math.max(0, (x - a) / (b - a)));
-    return t * t * (3 - 2 * t);
-  };
-  const speed = (u: number) => {
-    const half = width / 2;
-    const ramp = Math.max(1e-3, half * 0.6);
-    const rise = smooth(at - half - ramp, at - half, u);
-    const fall = 1 - smooth(at + half, at + half + ramp, u);
-    return 1 - (1 - slow) * Math.min(rise, fall);
-  };
-  const N = 257;
-  let acc = 0;
-  const cum = [0];
-  for (let k = 1; k < N; k++) {
-    const u0 = (k - 1) / (N - 1), u1 = k / (N - 1);
-    acc += ((speed(u0) + speed(u1)) / 2) * (u1 - u0);
-    cum.push(acc);
-  }
-  const v = cum[Math.round(at * (N - 1))] / (acc || 1);
-  // Keypoints span 0..segments, where the last segment leads into the next chapter.
-  const segments = i === CHAPTERS.length - 1 ? c.camera.length - 1 : c.camera.length;
-  return { v, nearestKeypoint: Math.round(v * segments) };
+/** Reports where each hold resolves to, for the debug panel and checks. */
+export function holdKeypoint(i: number): { at: number; keypoint: number } {
+  return { at: resolveHoldAt(i), keypoint: CHAPTERS[i].hold.on };
 }
