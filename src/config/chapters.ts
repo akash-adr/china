@@ -201,11 +201,13 @@ export const CHAPTERS: Chapter[] = [
     // 40 m body at 2 m eye height is a wall across the whole frame, which
     // gives the reveal away — nothing can "appear" if it was already filling
     // the shot.
-    camera: [[22, 2.1, -436], [19, 2.0, -450], [16, 2.4, -462],
+    camera: [[24, 2.1, -436], [21, 2.0, -450], [18, 2.4, -462],
              [0, 26, -492], [-12, 36, -518]],
-    // Searching: left, right, left again while low, then tilts up as the
-    // camera is yanked backwards.
-    lookAt: [[-6, 2.0, -452], [14, 1.8, -464], [-2, 2.2, -470],
+    // The search looks AWAY from the dragon — out to the right, then across,
+    // then right again. Aiming at it during the search is self-defeating: you
+    // cannot reveal something the camera has been staring at for 20 seconds.
+    // Only keypoint 4 turns back, as the camera is yanked up and away.
+    lookAt: [[26, 3.0, -446], [6, 2.2, -480], [25, 3.0, -468],
              [0, 7, -478], [0, 4, -482]],
     // Keypoint 2: the end of the search, immediately before the pull-back.
     hold: { on: 2, width: 0.38, slow: 0.15 },
@@ -213,8 +215,8 @@ export const CHAPTERS: Chapter[] = [
       // 40 m along Z — the longest object in the world.
       { modelId: 'chinese_dragon', position: [0, 0, -470], hero: true, label: 'dragon' },
       { modelId: 'stylized_rock', position: [13.5, 0, -450], label: 'rock' },
-      { modelId: 'stylized_rock', position: [-10, 0, -488], rotationY: 0.9, label: 'rock' },
-      { modelId: 'broken_medieval_column_set', position: [14, 0, -478], rotationY: -0.8, label: 'columns' },
+      { modelId: 'stylized_rock', position: [21, 0, -477], rotationY: 0.9, label: 'rock' },
+      { modelId: 'broken_medieval_column_set', position: [29, 0, -468], rotationY: -0.8, label: 'columns' },
     ],
   },
   {

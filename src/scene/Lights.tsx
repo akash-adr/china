@@ -17,8 +17,12 @@ export function Lights() {
         intensity={1.7}
         color="#C9A24A"
       />
-      {/* A cool counter-light, very low, to keep the dark sides from going flat. */}
-      <directionalLight position={[-30, 20, -40]} intensity={0.45} color="#3d4654" />
+      {/* Cool counter-light. Raised from 0.45 to 0.95 after chapter 5's hold
+          came out black: the key sits at +x, so any prop the camera looks at
+          from its -x side shows only shadowed faces. This is the fill that
+          stops those reading as silhouettes, and it keeps the shadow side
+          cool against the warm key rather than flattening it. */}
+      <directionalLight position={[-30, 20, -40]} intensity={0.95} color="#3d4654" />
     </>
   );
 }
