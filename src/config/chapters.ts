@@ -72,9 +72,13 @@ export const CHAPTERS: Chapter[] = [
     title: '墨虚',
     subtitle: 'Ink Void',
     scrollVh: 156,   // 12%
-    camera: [[0, 7.5, 30], [0, 4.6, 17], [0, 3.2, 7], [0, 2.8, -4]],
-    lookAt: [[1.5, 3.5, 2], [3.6, 2.8, -5], [1.2, 2.6, -16], [0, 2.4, -30]],
-    hold: { at: 0.7, width: 0.26, slow: 0.3 },
+    // Waking up. Starts low and close in the dark and barely moves: the first
+    // third covers about four metres. The pull-up at the end is the only real
+    // travel, and it doubles as the hand-off to the gate.
+    camera: [[0, 1.55, 9], [0, 1.65, 5.2], [0, 1.9, -1.5], [0, 6.0, -16]],
+    lookAt: [[0, 1.8, -5], [2.6, 2.0, -7.5], [4.2, 2.0, -7], [0, 2.6, -44]],
+    // Very slow and early — the hold IS the opening, not a pause within it.
+    hold: { at: 0.34, width: 0.4, slow: 0.11 },
     props: [
       // Offset from the camera line: the path runs down x = 0 toward chapter 2.
       { modelId: 'dragon_with_pearl', position: [4.6, 0, -6], rotationY: -0.6, hero: true,
