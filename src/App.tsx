@@ -2,10 +2,11 @@ import { useEffect } from 'react';
 import { Scene } from '@/scene/Scene';
 import { Overlay } from '@/ui/Overlay';
 import { DebugPanel } from '@/ui/DebugPanel';
+import { LoadingScreen } from '@/ui/LoadingScreen';
 import { useScrollEngine } from '@/scroll/useScrollEngine';
 import { progress } from '@/scroll/progress';
 import { CHAPTERS, CHAPTER_RANGES, chapterMarks } from '@/config/chapters';
-import { setDebugSettings } from '@/ui/debugStore';
+import { setDebugSettings, readout } from '@/ui/debugStore';
 import { auditPath, auditSummary } from '@/scene/audit';
 import { cameraAt, lookAtAt, pathT } from '@/scene/path';
 import { Vector3 } from 'three';
@@ -30,6 +31,12 @@ export default function App() {
     }));
     w.__setSpline = (on: boolean) => setDebugSettings({ showSpline: !!on });
     w.__captureMode = CAPTURE;
+    w.__progressValue = () => progress.value;
+    w.__rendererInfo = () => ({
+      calls: readout.calls, triangles: readout.triangles,
+      textures: readout.textures, geometries: readout.geometries,
+      programs: readout.programs,
+    });
     w.__auditPath = auditPath;
     w.__auditSummary = auditSummary;
     // Camera + aim at an arbitrary progress, without having to drive the page.
@@ -53,6 +60,7 @@ export default function App() {
     <>
       <Scene />
       <Overlay />
+      <LoadingScreen />
       <DebugPanel />
     </>
   );

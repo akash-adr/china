@@ -59,6 +59,13 @@ export interface Chapter {
    * 0.1 is almost stopped.
    */
   hold: { on: number; width: number; slow: number };
+  /**
+   * One warm key per chapter, placed behind or beside that chapter's hero so
+   * it rims the silhouette rather than flood-lighting the front. A single
+   * directional light is moved between these rather than six being lit at once:
+   * they are never seen together, and each extra light costs every shader.
+   */
+  keyLight: { position: Vec3; target: Vec3; intensity: number };
   props: PropPlacement[];
 }
 
@@ -88,6 +95,7 @@ export const CHAPTERS: Chapter[] = [
     lookAt: [[0, 1.8, -5], [2.6, 2.0, -7.5], [4.2, 2.0, -7], [0, 2.6, -44]],
     // On keypoint 1 — the hold IS the opening, not a pause within it.
     hold: { on: 1, width: 0.4, slow: 0.11 },
+    keyLight: { position: [9, 7, -17], target: [4.6, 2, -6], intensity: 2.6 },
     props: [
       // Offset from the camera line: the path runs down x = 0 toward chapter 2.
       { modelId: 'dragon_with_pearl', position: [4.6, 0, -6], rotationY: -0.6, hero: true,
@@ -95,6 +103,8 @@ export const CHAPTERS: Chapter[] = [
       { modelId: 'chinese_dragon_fan', position: [-3.2, 2.6, 4], rotationY: -0.5, label: 'fan' },
       { modelId: 'stylized_rock', position: [-7, 0, 10], label: 'rock' },
       { modelId: 'stylized_rock', position: [8.5, 0, 16], rotationY: 1.2, label: 'rock' },
+      // Deep background: far enough to read as a silhouette through the fog.
+      { modelId: 'fantasy_style_tree', position: [-17, 0, -34], rotationY: -0.4, label: 'ginkgo' },
     ],
   },
   {
@@ -116,6 +126,7 @@ export const CHAPTERS: Chapter[] = [
              [0, 3.6, -118], [0, 3.0, -146]],
     // Keypoint 3: framed in the opening, just before pushing through.
     hold: { on: 3, width: 0.34, slow: 0.2 },
+    keyLight: { position: [10, 9, -126], target: [0, 3, -110], intensity: 2.8 },
     props: [
       { modelId: 'torri_gate', position: [0, 0, -110], hero: true, hollow: true, label: 'paifang' },
       { modelId: 'stone_lion', position: [-3.6, 0, -103], rotationY: 0.12, label: 'lion' },
@@ -144,6 +155,7 @@ export const CHAPTERS: Chapter[] = [
              [11, 9, -235]],
     // Keypoint 4: the high framing that takes in both buildings.
     hold: { on: 4, width: 0.36, slow: 0.26 },
+    keyLight: { position: [28, 20, -258], target: [0, 10, -240], intensity: 3.0 },
     props: [
       { modelId: 'chinese_pagoda', position: [0, 0, -240], hero: true, label: 'pagoda' },
       { modelId: 'fantasy_style_tree', position: [21, 0, -229], rotationY: 0.6, label: 'ginkgo' },
@@ -177,6 +189,7 @@ export const CHAPTERS: Chapter[] = [
     // AND the exit, so the camera leaves fast. The speed profile only slows —
     // every "sudden" move on the site is a release out of a hold.
     hold: { on: 3, width: 0.34, slow: 0.11 },
+    keyLight: { position: [-7, 4.5, -368], target: [0, 1, -360], intensity: 3.2 },
     props: [
       // Thin 1.8 m cylinder: exactly where <JinguBang /> will stand.
       { shape: 'cylinder', size: [0.05, 1.8, 0.05], position: [0, 0, -360], hero: true,
@@ -211,6 +224,7 @@ export const CHAPTERS: Chapter[] = [
              [0, 7, -478], [0, 4, -482]],
     // Keypoint 2: the end of the search, immediately before the pull-back.
     hold: { on: 2, width: 0.38, slow: 0.15 },
+    keyLight: { position: [-24, 11, -487], target: [0, 3, -470], intensity: 3.0 },
     props: [
       // 40 m along Z — the longest object in the world.
       { modelId: 'chinese_dragon', position: [0, 0, -470], hero: true, label: 'dragon' },
@@ -236,6 +250,7 @@ export const CHAPTERS: Chapter[] = [
     // everywhere else the hold releases, here it is the ending, so the last
     // stretch of scroll buys almost no movement and the final frame sits still.
     hold: { on: 3, width: 0.34, slow: 0.1 },
+    keyLight: { position: [32, 34, -732], target: [10, 10, -720], intensity: 2.4 },
     props: [
       // The 80 m scan, far back — only ever a fogged silhouette.
       // 82 x 80 x 102 m. Pushed far back: at 60 m it fills the frame and reads
@@ -342,4 +357,13 @@ export function chapterMarks(i: number) {
 /** Reports where each hold resolves to, for the debug panel and checks. */
 export function holdKeypoint(i: number): { at: number; keypoint: number } {
   return { at: resolveHoldAt(i), keypoint: CHAPTERS[i].hold.on };
+}
+
+/** The model entries a chapter's placements refer to, de-duplicated. */
+export function modelsForChapterIndex(i: number) {
+  const c = CHAPTERS[i];
+  if (!c) return [];
+  const ids = new Set<string>();
+  for (const p of c.props) if (p.modelId) ids.add(p.modelId);
+  return [...ids].map((id) => MODELS_BY_ID[id]).filter(Boolean);
 }

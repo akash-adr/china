@@ -11,14 +11,20 @@ import { useSyncExternalStore } from 'react';
 export interface DebugSettings {
   showSpline: boolean;
   showStats: boolean;
+  /** Draw the blocking boxes over the real models, to check placement. */
+  showPlaceholders: boolean;
 }
 
-let settings: DebugSettings = { showSpline: false, showStats: true };
+let settings: DebugSettings = {
+  showSpline: false, showStats: true, showPlaceholders: false,
+};
 const listeners = new Set<() => void>();
 
 export function setDebugSettings(patch: Partial<DebugSettings>) {
   const next = { ...settings, ...patch };
-  if (next.showSpline === settings.showSpline && next.showStats === settings.showStats) return;
+  if (next.showSpline === settings.showSpline
+    && next.showStats === settings.showStats
+    && next.showPlaceholders === settings.showPlaceholders) return;
   settings = next;
   for (const l of listeners) l();
 }
@@ -32,4 +38,7 @@ export function useDebugSettings(): DebugSettings {
 }
 
 /** Written every frame by DebugBridge; read on demand by the panel. */
-export const readout = { x: 0, y: 0, z: 0, pathT: 0, fps: 0 };
+export const readout = {
+  x: 0, y: 0, z: 0, pathT: 0, fps: 0,
+  calls: 0, triangles: 0, textures: 0, geometries: 0, programs: 0,
+};

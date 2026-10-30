@@ -19,7 +19,13 @@ page.on('pageerror', (e) => console.log('  [pageerror]', String(e).slice(0, 200)
 await page.goto('http://localhost:5180/?capture=1', { waitUntil: 'networkidle' });
 await page.waitForFunction(() => !!window.__gotoProgress, { timeout: 30000 });
 await page.evaluate(() => document.fonts.ready);
-await page.waitForTimeout(1200);
+// Wait for the real models: the loading screen dismisses itself once the
+// manager is idle and a couple of frames have been drawn.
+await page.waitForFunction(() => {
+  const el = document.querySelector('.loading-screen');
+  return el && el.dataset.done === 'true';
+}, { timeout: 180000 });
+await page.waitForTimeout(2000);
 
 const chapters = await page.evaluate(() => window.__chapters);
 const frames = [];
@@ -29,7 +35,7 @@ for (const c of chapters) {
   for (const [kind, p] of [['start', c.marks.start], ['hold', c.marks.hold], ['end', c.marks.end]]) {
     await page.evaluate((v) => window.__gotoProgress(v), p);
     // A few frames so the title transition and any damping settle.
-    await page.waitForTimeout(650);
+    await page.waitForTimeout(900);
     const buf = await page.screenshot();
     const cam = await page.evaluate(() => {
       const r = window.__chapters && document.title ? null : null;

@@ -88,9 +88,16 @@ export function Placeholders() {
  */
 export function Ground() {
   return (
-    <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.01, -360]} receiveShadow>
+    <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.01, -360]}>
       <planeGeometry args={[400, 1000]} />
-      <meshStandardMaterial color="#0E0D0B" roughness={1} metalness={0} />
+      {/* Unlit on purpose. A 400 x 1000 m horizontal plane takes the warm key
+          almost face-on, and no albedo dark enough to kill that still reads as
+          ground — darkening it to #070709 barely moved the gold wash across
+          the bottom of every frame. MeshBasicMaterial ignores lights entirely,
+          so the floor is a constant near-void that fog blends away, which is
+          all it is for. Nothing casts shadows yet, so there is nothing to lose
+          by not receiving them. */}
+      <meshBasicMaterial color="#0a0a0c" />
     </mesh>
   );
 }

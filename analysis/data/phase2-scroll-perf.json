@@ -1,0 +1,80 @@
+[
+  {
+    "chapter": 1,
+    "title": "Ink Void",
+    "frames": 317,
+    "meanFps": 59.1,
+    "minFps": 8.2,
+    "p95Fps": 45.9,
+    "calls": 22,
+    "triangles": 649486,
+    "textures": 25,
+    "geometries": 23,
+    "programs": 19
+  },
+  {
+    "chapter": 2,
+    "title": "The Mountain Gate",
+    "frames": 396,
+    "meanFps": 59.2,
+    "minFps": 8.6,
+    "p95Fps": 48.5,
+    "calls": 29,
+    "triangles": 715967,
+    "textures": 38,
+    "geometries": 28,
+    "programs": 20
+  },
+  {
+    "chapter": 3,
+    "title": "Temple Ruins",
+    "frames": 589,
+    "meanFps": 59.8,
+    "minFps": 22.8,
+    "p95Fps": 48.5,
+    "calls": 48,
+    "triangles": 1281692,
+    "textures": 41,
+    "geometries": 33,
+    "programs": 23
+  },
+  {
+    "chapter": 4,
+    "title": "The Legendary Staff",
+    "frames": 469,
+    "meanFps": 58.2,
+    "minFps": 11.5,
+    "p95Fps": 49.3,
+    "calls": 11,
+    "triangles": 60557,
+    "textures": 47,
+    "geometries": 35,
+    "programs": 25
+  },
+  {
+    "chapter": 5,
+    "title": "The Guardian Awakens",
+    "frames": 457,
+    "meanFps": 56.8,
+    "minFps": 18.1,
+    "p95Fps": 38.6,
+    "calls": 9,
+    "triangles": 477816,
+    "textures": 48,
+    "geometries": 36,
+    "programs": 26
+  },
+  {
+    "chapter": 6,
+    "title": "The Summit",
+    "frames": 390,
+    "meanFps": 58.1,
+    "minFps": 38.9,
+    "p95Fps": 44.8,
+    "calls": 5,
+    "triangles": 477816,
+    "textures": 48,
+    "geometries": 36,
+    "programs": 26
+  }
+]

@@ -15,8 +15,11 @@ export function DebugPanel() {
     pathT: { value: '0.000', editable: false },
     camera: { value: '0.0, 0.0, 0.0', editable: false },
     fps: { value: '0', editable: false },
+    calls: { value: '0', editable: false },
+    triangles: { value: '0', editable: false },
     showSpline: { value: false, label: 'draw camera spline' },
     showStats: { value: true, label: 'fps meter' },
+    showPlaceholders: { value: false, label: 'overlay blocking boxes' },
     'jump to chapter': button(() => {
       const i = (progress.chapter + 1) % CHAPTERS.length;
       const el = document.getElementById(CHAPTERS[i].id);
@@ -29,8 +32,9 @@ export function DebugPanel() {
     setDebugSettings({
       showSpline: values.showSpline as boolean,
       showStats: values.showStats as boolean,
+      showPlaceholders: values.showPlaceholders as boolean,
     });
-  }, [values.showSpline, values.showStats]);
+  }, [values.showSpline, values.showStats, values.showPlaceholders]);
 
   // Sample readouts at ~10 Hz. Reading them every frame would re-render the
   // panel 60 times a second to display numbers nobody can read that fast.
@@ -43,6 +47,8 @@ export function DebugPanel() {
         pathT: readout.pathT.toFixed(3),
         camera: `${readout.x.toFixed(1)}, ${readout.y.toFixed(1)}, ${readout.z.toFixed(1)}`,
         fps: String(readout.fps),
+        calls: String(readout.calls),
+        triangles: readout.triangles.toLocaleString(),
       });
     }, 100);
     return () => window.clearInterval(id);
