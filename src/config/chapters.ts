@@ -71,7 +71,7 @@ export const CHAPTERS: Chapter[] = [
     numeral: '一',
     title: '墨虚',
     subtitle: 'Ink Void',
-    scrollVh: 160,
+    scrollVh: 156,   // 12%
     camera: [[0, 7.5, 30], [0, 4.6, 17], [0, 3.2, 7], [0, 2.8, -4]],
     lookAt: [[1.5, 3.5, 2], [3.6, 2.8, -5], [1.2, 2.6, -16], [0, 2.4, -30]],
     hold: { at: 0.7, width: 0.26, slow: 0.3 },
@@ -90,7 +90,7 @@ export const CHAPTERS: Chapter[] = [
     numeral: '二',
     title: '山门',
     subtitle: 'The Mountain Gate',
-    scrollVh: 150,
+    scrollVh: 195,   // 15%
     camera: [[0, 2.8, -84], [0, 2.3, -99], [0, 2.1, -110], [-2, 3.0, -132]],
     lookAt: [[0, 3.2, -104], [0, 3.6, -112], [0, 3.2, -122], [-2, 3.4, -150]],
     hold: { at: 0.52, width: 0.3, slow: 0.26 },
@@ -110,7 +110,7 @@ export const CHAPTERS: Chapter[] = [
     numeral: '三',
     title: '废寺',
     subtitle: 'Temple Ruins',
-    scrollVh: 190,
+    scrollVh: 286,   // 22% — the longest, it is the exploration chapter
     // Standoff matters here: at 11 m an 18 x 20 m building fills the frame and
     // reads as a wall. ~40 m puts it at about 60% of frame height.
     camera: [[-14, 4.5, -194], [-34, 9, -216], [-41, 20, -246], [-22, 31, -284]],
@@ -132,8 +132,7 @@ export const CHAPTERS: Chapter[] = [
     numeral: '四',
     title: '金箍棒',
     subtitle: 'The Legendary Staff',
-    // The hero moment: longest chapter, hardest hold.
-    scrollVh: 210,
+    scrollVh: 234,   // 18%
     // The fifth keypoint is an exit: without it the spline swings wide on its
     // way to chapter 5's first keypoint 70 m away, and clips the ground props.
     camera: [[0, 6.0, -336], [3.2, 3.4, -347], [2.4, 2.0, -353.5], [1.0, 1.45, -355.9],
@@ -160,7 +159,7 @@ export const CHAPTERS: Chapter[] = [
     numeral: '五',
     title: '守护者',
     subtitle: 'The Guardian Awakens',
-    scrollVh: 200,
+    scrollVh: 234,   // 18%
     camera: [[34, 7.0, -426], [30, 12, -456], [19, 19, -486], [-2, 25, -516]],
     lookAt: [[4, 3.0, -456], [0, 3.5, -470], [0, 5.0, -478], [0, 5.5, -490]],
     hold: { at: 0.6, width: 0.3, slow: 0.24 },
@@ -178,7 +177,7 @@ export const CHAPTERS: Chapter[] = [
     numeral: '六',
     title: '塔顶',
     subtitle: 'The Summit',
-    scrollVh: 220,
+    scrollVh: 195,   // 15%
     camera: [[0, 16, -596], [0, 25, -622], [0, 36, -646], [0, 46, -666]],
     lookAt: [[0, 20, -676], [0, 30, -740], [0, 44, -820], [0, 56, -890]],
     hold: { at: 0.78, width: 0.3, slow: 0.22 },
