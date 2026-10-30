@@ -125,19 +125,27 @@ export const CHAPTERS: Chapter[] = [
     title: '废寺',
     subtitle: 'Temple Ruins',
     scrollVh: 286,   // 22% — the longest, it is the exploration chapter
-    // Standoff matters here: at 11 m an 18 x 20 m building fills the frame and
-    // reads as a wall. ~40 m puts it at about 60% of frame height.
-    camera: [[-14, 4.5, -194], [-34, 9, -216], [-41, 20, -246], [-22, 31, -284]],
-    lookAt: [[-2, 8, -234], [0, 10, -240], [0, 12, -242], [0, 9, -252]],
-    hold: { at: 0.58, width: 0.28, slow: 0.3 },
+    // A slow orbit that starts low and rises. Standoff matters: at 11 m an
+    // 18 x 20 m building fills the frame and reads as a wall, so the orbit sits
+    // around 40 m out and climbs to look down at the end.
+    camera: [[-16, 3.0, -198], [-34, 4.8, -220], [-41, 11, -246], [-28, 20, -270],
+             [-7, 29, -284]],
+    // Holds the pagoda, then widens right at the end to take in the ginkgo at
+    // x = +21 as well — that pairing is the reveal.
+    lookAt: [[-6, 6, -232], [0, 8, -240], [1, 10, -241], [6, 11, -238],
+             [11, 9, -235]],
+    // Late: the hero frame is the rise that reveals both buildings together.
+    hold: { at: 0.78, width: 0.36, slow: 0.26 },
     props: [
       { modelId: 'chinese_pagoda', position: [0, 0, -240], hero: true, label: 'pagoda' },
       { modelId: 'fantasy_style_tree', position: [21, 0, -229], rotationY: 0.6, label: 'ginkgo' },
-      { modelId: 'broken_medieval_column_set', position: [-14, 0, -234], rotationY: -0.35, label: 'columns' },
-      { modelId: 'broken_medieval_column_set', position: [-8, 0, -252], rotationY: 1.1, label: 'columns' },
+      // Close to the orbit so they sweep past the lens — at 20 m out they read
+      // as scenery, at ~5 m clearance they read as parallax.
+      { modelId: 'broken_medieval_column_set', position: [-27, 0, -216], rotationY: -0.35, label: 'columns' },
+      { modelId: 'broken_medieval_column_set', position: [-33, 0, -252], rotationY: 1.1, label: 'columns' },
       { modelId: 'module_2_-_chinese_lantern', position: [6, 2.6, -224], label: 'lantern' },
       { modelId: 'stylized_rock', position: [13, 0, -248], label: 'rock' },
-      { modelId: 'stylized_rock', position: [-13, 0, -215], rotationY: 2.1, label: 'rock' },
+      { modelId: 'stylized_rock', position: [-24, 0, -205], rotationY: 2.1, label: 'rock' },
     ],
   },
   {
