@@ -155,17 +155,20 @@ export const CHAPTERS: Chapter[] = [
     title: '金箍棒',
     subtitle: 'The Legendary Staff',
     scrollVh: 234,   // 18%
-    // The fifth keypoint is an exit: without it the spline swings wide on its
-    // way to chapter 5's first keypoint 70 m away, and clips the ground props.
-    camera: [[0, 6.0, -336], [3.2, 3.4, -347], [2.4, 2.0, -353.5], [1.0, 1.45, -355.9],
-             [3.5, 4.5, -374]],
-    lookAt: [[0, 2.0, -356], [0, 1.4, -359], [0, 1.0, -360], [0, 0.95, -360],
-             [0, 2.2, -382]],
-    // 0.55, not 0.8: this chapter has a fifth (exit) keypoint, so the closest
-    // approach to the staff sits around 60% of the chapter's path rather than
-    // at its end. At 0.8 the hold landed on the exit and the hero beat was a
-    // view of the next chapter.
-    hold: { at: 0.55, width: 0.3, slow: 0.16 },
+    // Drops to 0.65 m off the floor and looks up: a 1.8 m prop only reads as
+    // monumental from below. Keypoint 4 is the sharp push-in after the hold,
+    // keypoint 5 the exit — without an exit the spline swings wide toward
+    // chapter 5's first keypoint 70 m away and clips the ground props.
+    camera: [[0, 3.6, -340], [2.3, 1.5, -350], [1.8, 0.78, -354],
+             [1.1, 0.66, -356.4], [0.35, 0.9, -359.2], [3.5, 4.5, -374]],
+    // Aimed at the upper shaft throughout, so the frame is looking up at it.
+    lookAt: [[0, 1.2, -358], [0, 1.5, -359.5], [0, 1.7, -360], [0, 1.75, -360],
+             [0, 1.55, -360], [0, 2.5, -384]],
+    // Narrow and very slow, landing on keypoint 4 (the low hold). What follows
+    // is the point: the remaining third of the scroll has to cover the push-in
+    // AND the exit, so the camera leaves fast. The speed profile only slows —
+    // every "sudden" move on the site is a release out of a hold.
+    hold: { at: 0.48, width: 0.34, slow: 0.11 },
     props: [
       // Thin 1.8 m cylinder: exactly where <JinguBang /> will stand.
       { shape: 'cylinder', size: [0.05, 1.8, 0.05], position: [0, 0, -360], hero: true,
