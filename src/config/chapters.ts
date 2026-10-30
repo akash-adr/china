@@ -95,9 +95,19 @@ export const CHAPTERS: Chapter[] = [
     title: '山门',
     subtitle: 'The Mountain Gate',
     scrollVh: 195,   // 15%
-    camera: [[0, 2.8, -84], [0, 2.3, -99], [0, 2.1, -110], [-2, 3.0, -132]],
-    lookAt: [[0, 3.2, -104], [0, 3.6, -112], [0, 3.2, -122], [-2, 3.4, -150]],
-    hold: { at: 0.52, width: 0.3, slow: 0.26 },
+    // Eye height the whole way in, so the 5.5 m gate looms rather than being
+    // looked down on. Five keypoints: the extra one is the pause between the
+    // lions, which needs its own segment or the turn toward each is too quick
+    // to register.
+    camera: [[0, 1.7, -76], [0, 1.7, -95], [0, 1.68, -103], [0, 1.75, -109.5],
+             [0, 2.3, -128]],
+    // The two middle look-ats turn to each lion in turn, then recentre through
+    // the opening for the hold.
+    lookAt: [[0, 3.4, -110], [-2.6, 1.5, -102.5], [2.6, 1.5, -103.5],
+             [0, 3.6, -118], [0, 3.0, -146]],
+    // Lands on the 4th keypoint: framed in the opening, just before pushing
+    // through.
+    hold: { at: 0.64, width: 0.34, slow: 0.2 },
     props: [
       { modelId: 'torri_gate', position: [0, 0, -110], hero: true, hollow: true, label: 'paifang' },
       { modelId: 'stone_lion', position: [-3.6, 0, -103], rotationY: 0.12, label: 'lion' },
