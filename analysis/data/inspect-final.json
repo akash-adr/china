@@ -1,0 +1,1784 @@
+[
+  {
+    "file": "broken_medieval_column_set.glb",
+    "path": "public/models/broken_medieval_column_set.glb",
+    "warnings": [],
+    "sizeMB": 0.75,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [
+      "EXT_texture_webp",
+      "KHR_draco_mesh_compression"
+    ],
+    "meshes": 4,
+    "primitives": 4,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 4504,
+    "rawVertices": 2538,
+    "sceneTriangles": 4504,
+    "sceneVertices": 2538,
+    "nodes": 4,
+    "drawCalls": 4,
+    "materials": 4,
+    "materialNames": [
+      "round_old_pillar_2",
+      "round_old_pillar_1",
+      "round_old_pillar_3",
+      "round_old_pillar_4"
+    ],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": 4,
+    "textureSlots": [
+      "baseColor",
+      "normal",
+      "metallicRoughness"
+    ],
+    "textures": 12,
+    "textureList": [
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 41,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 22,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 110,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 55,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 56,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 118,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 44,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 64,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 84,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 22,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 19,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 100,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 0.72,
+    "textureVramMB": 63.8,
+    "maxTextureRes": "1024x1024",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -19.611,
+        -0.238,
+        -1.289
+      ],
+      "max": [
+        1.274,
+        12.947,
+        1.274
+      ],
+      "dim": [
+        20.886,
+        13.184,
+        2.562
+      ],
+      "center": [
+        -9.169,
+        6.354,
+        -0.007
+      ]
+    },
+    "maxDim": 20.886,
+    "originRel": {
+      "x": 0.939,
+      "y": 0.018,
+      "z": 0.503
+    },
+    "pivot": "at base, horizontally offset",
+    "upAxisGuess": "Y (glTF standard)",
+    "scaleNote": "architectural scale (20.9 units ≈ metres)",
+    "rootNodes": [
+      {
+        "name": "round pillar low_round old pillar 2_0",
+        "t": [
+          -12.417,
+          0.68,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          0.01,
+          0.01,
+          0.01
+        ]
+      },
+      {
+        "name": "round pillar 2 low_round old pillar 1_0",
+        "t": [
+          -18.43,
+          0.68,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          0.01,
+          0.01,
+          0.01
+        ]
+      },
+      {
+        "name": "rpund pillar3 low_round old pillar 3_0",
+        "t": [
+          -5.774,
+          0.68,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          0.01,
+          0.01,
+          0.01
+        ]
+      },
+      {
+        "name": "round pillar 4 low_round old pillar 4_0",
+        "t": [
+          0,
+          0.68,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          0.01,
+          0.01,
+          0.01
+        ]
+      }
+    ]
+  },
+  {
+    "file": "chinese_dragon.glb",
+    "path": "public/models/chinese_dragon.glb",
+    "warnings": [],
+    "sizeMB": 2.99,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [
+      "EXT_texture_webp",
+      "KHR_draco_mesh_compression",
+      "KHR_materials_clearcoat"
+    ],
+    "meshes": 2,
+    "primitives": 2,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 50553,
+    "rawVertices": 28309,
+    "sceneTriangles": 50553,
+    "sceneVertices": 28309,
+    "nodes": 291,
+    "drawCalls": 2,
+    "materials": 2,
+    "materialNames": [
+      "MI_b09_00_drg_hair",
+      "MI_b09_00_drg_eye"
+    ],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": 2,
+    "textureSlots": [
+      "normal",
+      "emissive",
+      "baseColor"
+    ],
+    "textures": 4,
+    "textureList": [
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 292,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 433,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 171,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "512x512",
+        "px": 262144,
+        "kb": 41,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 0.92,
+    "textureVramMB": 65.2,
+    "maxTextureRes": "2048x2048",
+    "animations": [
+      {
+        "name": "dragon_flyby",
+        "duration": 8,
+        "channels": 559,
+        "interpolations": [
+          "LINEAR"
+        ]
+      },
+      {
+        "name": "dragon_hover",
+        "duration": 8,
+        "channels": 559,
+        "interpolations": [
+          "LINEAR"
+        ]
+      }
+    ],
+    "skins": 1,
+    "jointCount": 273,
+    "skinned": true,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -389.91,
+        -24.346,
+        -2037.193
+      ],
+      "max": [
+        389.94,
+        517.697,
+        2932.188
+      ],
+      "dim": [
+        779.85,
+        542.043,
+        4969.381
+      ],
+      "center": [
+        0.015,
+        246.676,
+        447.498
+      ]
+    },
+    "maxDim": 4969.381,
+    "originRel": {
+      "x": 0.5,
+      "y": 0.045,
+      "z": 0.41
+    },
+    "pivot": "at base, horizontally offset",
+    "upAxisGuess": "possibly Z-up (depth > height)",
+    "scaleNote": "very large (4969 units) — likely cm units or oversized, scale down",
+    "rootNodes": [
+      {
+        "name": "RootNode",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "file": "chinese_dragon_fan.glb",
+    "path": "public/models/chinese_dragon_fan.glb",
+    "warnings": [],
+    "sizeMB": 0.73,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [
+      "EXT_texture_webp",
+      "KHR_draco_mesh_compression"
+    ],
+    "meshes": 3,
+    "primitives": 3,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 25822,
+    "rawVertices": 20904,
+    "sceneTriangles": 25822,
+    "sceneVertices": 20904,
+    "nodes": 3,
+    "drawCalls": 3,
+    "materials": 3,
+    "materialNames": [
+      "aiStandardSurface1SG",
+      "aiStandardSurface2SG",
+      "aiStandardSurface3SG"
+    ],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": 3,
+    "textureSlots": [
+      "normal",
+      "baseColor",
+      "metallicRoughness"
+    ],
+    "textures": 6,
+    "textureList": [
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 7,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 110,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 65,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 258,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 139,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 16,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 0.58,
+    "textureVramMB": 127.7,
+    "maxTextureRes": "2048x2048",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -20.082,
+        0,
+        -12.707
+      ],
+      "max": [
+        20.082,
+        24.822,
+        12.708
+      ],
+      "dim": [
+        40.165,
+        24.822,
+        25.415
+      ],
+      "center": [
+        0,
+        12.411,
+        0
+      ]
+    },
+    "maxDim": 40.165,
+    "originRel": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "pivot": "at base, horizontally centered",
+    "upAxisGuess": "possibly Z-up (depth > height)",
+    "scaleNote": "architectural scale (40.2 units ≈ metres)",
+    "rootNodes": [
+      {
+        "name": "Object_2",
+        "t": [
+          -3.507,
+          3.323,
+          16.92
+        ],
+        "r": [
+          -0.707,
+          0,
+          0,
+          0.707
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Object_3",
+        "t": [
+          -3.507,
+          3.323,
+          16.92
+        ],
+        "r": [
+          -0.707,
+          0,
+          0,
+          0.707
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Object_6",
+        "t": [
+          -3.507,
+          3.323,
+          16.92
+        ],
+        "r": [
+          -0.707,
+          0,
+          0,
+          0.707
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "file": "chinese_pagoda.glb",
+    "path": "public/models/chinese_pagoda.glb",
+    "warnings": [],
+    "sizeMB": 1.35,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [
+      "EXT_texture_webp",
+      "KHR_draco_mesh_compression",
+      "KHR_materials_emissive_strength",
+      "KHR_materials_specular"
+    ],
+    "meshes": 1,
+    "primitives": 1,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 232041,
+    "rawVertices": 164630,
+    "sceneTriangles": 232041,
+    "sceneVertices": 164630,
+    "nodes": 1,
+    "drawCalls": 1,
+    "materials": 1,
+    "materialNames": [
+      "BaotaHLL_1001"
+    ],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": 1,
+    "textureSlots": [
+      "emissive"
+    ],
+    "textures": 1,
+    "textureList": [
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 513,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 0.5,
+    "textureVramMB": 21.3,
+    "maxTextureRes": "2048x2048",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -11.011,
+        -0.861,
+        -11.17
+      ],
+      "max": [
+        11.239,
+        23.913,
+        11.113
+      ],
+      "dim": [
+        22.25,
+        24.774,
+        22.283
+      ],
+      "center": [
+        0.114,
+        11.526,
+        -0.029
+      ]
+    },
+    "maxDim": 24.774,
+    "originRel": {
+      "x": 0.495,
+      "y": 0.035,
+      "z": 0.501
+    },
+    "pivot": "at base, horizontally centered",
+    "upAxisGuess": "Y (glTF standard)",
+    "scaleNote": "architectural scale (24.8 units ≈ metres)",
+    "rootNodes": [
+      {
+        "name": "Object_3",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          -0.707,
+          0,
+          0,
+          0.707
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "file": "dragon_with_pearl.glb",
+    "path": "public/models/dragon_with_pearl.glb",
+    "warnings": [],
+    "sizeMB": 0.44,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [
+      "KHR_draco_mesh_compression"
+    ],
+    "meshes": 1,
+    "primitives": 1,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 149944,
+    "rawVertices": 86564,
+    "sceneTriangles": 149944,
+    "sceneVertices": 86564,
+    "nodes": 1,
+    "drawCalls": 1,
+    "materials": 1,
+    "materialNames": [
+      "Scene_-_Root"
+    ],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": 1,
+    "textureSlots": [],
+    "textures": 0,
+    "textureList": [],
+    "textureBytesMB": 0,
+    "textureVramMB": 0,
+    "maxTextureRes": "none",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -63.279,
+        -102.254,
+        -75.518
+      ],
+      "max": [
+        76.61,
+        83.65,
+        69.696
+      ],
+      "dim": [
+        139.889,
+        185.904,
+        145.215
+      ],
+      "center": [
+        6.666,
+        -9.302,
+        -2.911
+      ]
+    },
+    "maxDim": 185.904,
+    "originRel": {
+      "x": 0.452,
+      "y": 0.55,
+      "z": 0.52
+    },
+    "pivot": "fully centered",
+    "upAxisGuess": "Y (glTF standard)",
+    "scaleNote": "very large (186 units) — likely cm units or oversized, scale down",
+    "rootNodes": [
+      {
+        "name": "Object_2",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          -0.093,
+          0.237,
+          0.023,
+          0.967
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fantasy_style_tree.glb",
+    "path": "public/models/fantasy_style_tree.glb",
+    "warnings": [],
+    "sizeMB": 5.06,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [
+      "EXT_texture_webp",
+      "KHR_draco_mesh_compression",
+      "KHR_materials_specular"
+    ],
+    "meshes": 5,
+    "primitives": 5,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 346729,
+    "rawVertices": 235946,
+    "sceneTriangles": 346729,
+    "sceneVertices": 235946,
+    "nodes": 5,
+    "drawCalls": 5,
+    "materials": 5,
+    "materialNames": [
+      "Bark_Mat",
+      "Leaf_v3_Mat",
+      "Leaf_Mat",
+      "Leaf_v4_Mat",
+      "Leaf_v2_Mat"
+    ],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": 5,
+    "textureSlots": [
+      "baseColor",
+      "normal",
+      "metallicRoughness"
+    ],
+    "textures": 10,
+    "textureList": [
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x2048",
+        "px": 2097152,
+        "kb": 452,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x2048",
+        "px": 2097152,
+        "kb": 163,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x2048",
+        "px": 2097152,
+        "kb": 976,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x2048",
+        "px": 2097152,
+        "kb": 1187,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 4,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 22,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 96,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 32,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 5,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 5,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 2.87,
+    "textureVramMB": 74.5,
+    "maxTextureRes": "1024x2048",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -7.134,
+        -3.26,
+        -2.257
+      ],
+      "max": [
+        2.417,
+        9.977,
+        8.078
+      ],
+      "dim": [
+        9.55,
+        13.237,
+        10.335
+      ],
+      "center": [
+        -2.359,
+        3.358,
+        2.91
+      ]
+    },
+    "maxDim": 13.237,
+    "originRel": {
+      "x": 0.747,
+      "y": 0.246,
+      "z": 0.218
+    },
+    "pivot": "offset inside bounds",
+    "upAxisGuess": "Y (glTF standard)",
+    "scaleNote": "architectural scale (13.2 units ≈ metres)",
+    "rootNodes": [
+      {
+        "name": "Bark_Bark_Mat_0",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          0.01,
+          0.01,
+          0.01
+        ]
+      },
+      {
+        "name": "Leaf_v3_Leaf_v3_Mat_0",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          0.01,
+          0.01,
+          0.01
+        ]
+      },
+      {
+        "name": "Leaf_Leaf_Mat_0",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          0.01,
+          0.01,
+          0.01
+        ]
+      },
+      {
+        "name": "Leaf_v4_Leaf_v4_Mat_0",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          0.01,
+          0.01,
+          0.01
+        ]
+      },
+      {
+        "name": "Leaf_v2_Leaf_v2_Mat_0",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          0.01,
+          0.01,
+          0.01
+        ]
+      }
+    ]
+  },
+  {
+    "file": "jinshan_temple_cishou_pagoda_far.glb",
+    "path": "public/models/jinshan_temple_cishou_pagoda_far.glb",
+    "warnings": [],
+    "sizeMB": 1.26,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [
+      "EXT_texture_webp",
+      "KHR_draco_mesh_compression",
+      "KHR_materials_specular"
+    ],
+    "meshes": 1,
+    "primitives": 1,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 208041,
+    "rawVertices": 277816,
+    "sceneTriangles": 208041,
+    "sceneVertices": 277816,
+    "nodes": 1,
+    "drawCalls": 1,
+    "materials": 1,
+    "materialNames": [
+      "20241224_003_RC_LOD0_u0_v0"
+    ],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": 1,
+    "textureSlots": [
+      "baseColor"
+    ],
+    "textures": 1,
+    "textureList": [
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 203,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 0.2,
+    "textureVramMB": 5.3,
+    "maxTextureRes": "1024x1024",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -163.73,
+        23.784,
+        -203.705
+      ],
+      "max": [
+        163.745,
+        341.537,
+        203.662
+      ],
+      "dim": [
+        327.475,
+        317.753,
+        407.367
+      ],
+      "center": [
+        0.008,
+        182.661,
+        -0.021
+      ]
+    },
+    "maxDim": 407.367,
+    "originRel": {
+      "x": 0.5,
+      "y": -0.075,
+      "z": 0.5
+    },
+    "pivot": "offset outside bounds",
+    "upAxisGuess": "possibly Z-up (depth > height)",
+    "scaleNote": "very large (407 units) — likely cm units or oversized, scale down",
+    "rootNodes": [
+      {
+        "name": "Object_2",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          -0.707,
+          0,
+          0,
+          0.707
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "file": "module_2_-_chinese_lantern.glb",
+    "path": "public/models/module_2_-_chinese_lantern.glb",
+    "warnings": [],
+    "sizeMB": 0.05,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [
+      "EXT_texture_webp",
+      "KHR_draco_mesh_compression"
+    ],
+    "meshes": 1,
+    "primitives": 1,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 18206,
+    "rawVertices": 30290,
+    "sceneTriangles": 18206,
+    "sceneVertices": 30290,
+    "nodes": 1,
+    "drawCalls": 1,
+    "materials": 1,
+    "materialNames": [
+      "PaletteMaterial001"
+    ],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": 1,
+    "textureSlots": [
+      "baseColor",
+      "metallicRoughness"
+    ],
+    "textures": 2,
+    "textureList": [
+      {
+        "name": "PaletteBaseColor",
+        "mime": "image/webp",
+        "res": "32x4",
+        "px": 128,
+        "kb": 0,
+        "npot": false
+      },
+      {
+        "name": "PaletteMetallicRoughness",
+        "mime": "image/webp",
+        "res": "32x4",
+        "px": 128,
+        "kb": 0,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 0,
+    "textureVramMB": 0,
+    "maxTextureRes": "32x4",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -1.523,
+        -3.163,
+        -1.719
+      ],
+      "max": [
+        1.52,
+        4.234,
+        1.711
+      ],
+      "dim": [
+        3.043,
+        7.397,
+        3.43
+      ],
+      "center": [
+        -0.002,
+        0.535,
+        -0.004
+      ]
+    },
+    "maxDim": 7.397,
+    "originRel": {
+      "x": 0.501,
+      "y": 0.428,
+      "z": 0.501
+    },
+    "pivot": "fully centered",
+    "upAxisGuess": "Y (glTF standard)",
+    "scaleNote": "architectural scale (7.4 units ≈ metres)",
+    "rootNodes": [
+      {
+        "name": "Cube_Chain_0",
+        "t": [
+          0,
+          2.796,
+          0
+        ],
+        "r": [
+          -0.707,
+          0,
+          0,
+          0.707
+        ],
+        "s": [
+          0.121,
+          0.024,
+          0.171
+        ]
+      }
+    ]
+  },
+  {
+    "file": "stone_lion.glb",
+    "path": "public/models/stone_lion.glb",
+    "warnings": [],
+    "sizeMB": 0.56,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [
+      "EXT_texture_webp",
+      "KHR_draco_mesh_compression"
+    ],
+    "meshes": 1,
+    "primitives": 1,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 21415,
+    "rawVertices": 12554,
+    "sceneTriangles": 21415,
+    "sceneVertices": 12554,
+    "nodes": 1,
+    "drawCalls": 1,
+    "materials": 1,
+    "materialNames": [
+      "material"
+    ],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": 0,
+    "textureSlots": [
+      "baseColor",
+      "normal",
+      "metallicRoughness",
+      "occlusion"
+    ],
+    "textures": 3,
+    "textureList": [
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 88,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 172,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 169,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 0.42,
+    "textureVramMB": 16,
+    "maxTextureRes": "1024x1024",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -34.728,
+        0.004,
+        -53.929
+      ],
+      "max": [
+        34.729,
+        108.74,
+        41.167
+      ],
+      "dim": [
+        69.457,
+        108.735,
+        95.096
+      ],
+      "center": [
+        0,
+        54.372,
+        -6.381
+      ]
+    },
+    "maxDim": 108.735,
+    "originRel": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.567
+    },
+    "pivot": "at base, horizontally centered",
+    "upAxisGuess": "Y (glTF standard)",
+    "scaleNote": "very large (109 units) — likely cm units or oversized, scale down",
+    "rootNodes": [
+      {
+        "name": "Object_6",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "file": "stylized_rock.glb",
+    "path": "public/models/stylized_rock.glb",
+    "warnings": [],
+    "sizeMB": 0.13,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [
+      "EXT_texture_webp",
+      "KHR_draco_mesh_compression"
+    ],
+    "meshes": 1,
+    "primitives": 1,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 660,
+    "rawVertices": 357,
+    "sceneTriangles": 660,
+    "sceneVertices": 357,
+    "nodes": 1,
+    "drawCalls": 1,
+    "materials": 1,
+    "materialNames": [
+      "defaultMat"
+    ],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": 1,
+    "textureSlots": [
+      "baseColor",
+      "normal",
+      "metallicRoughness",
+      "occlusion"
+    ],
+    "textures": 3,
+    "textureList": [
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 13,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 79,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/webp",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 32,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 0.12,
+    "textureVramMB": 16,
+    "maxTextureRes": "1024x1024",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -0.09,
+        -0.098,
+        -0.045
+      ],
+      "max": [
+        0.053,
+        0.123,
+        0.062
+      ],
+      "dim": [
+        0.143,
+        0.222,
+        0.107
+      ],
+      "center": [
+        -0.018,
+        0.013,
+        0.008
+      ]
+    },
+    "maxDim": 0.222,
+    "originRel": {
+      "x": 0.627,
+      "y": 0.444,
+      "z": 0.424
+    },
+    "pivot": "offset inside bounds",
+    "upAxisGuess": "Y (glTF standard)",
+    "scaleNote": "human/prop scale (0.22 units ≈ metres)",
+    "rootNodes": [
+      {
+        "name": "Object_2",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          -0.707,
+          0,
+          0,
+          0.707
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "file": "torri_gate.glb",
+    "path": "public/models/torri_gate.glb",
+    "warnings": [],
+    "sizeMB": 0.23,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [
+      "KHR_draco_mesh_compression"
+    ],
+    "meshes": 10,
+    "primitives": 10,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 70929,
+    "rawVertices": 89258,
+    "sceneTriangles": 70929,
+    "sceneVertices": 89258,
+    "nodes": 10,
+    "drawCalls": 10,
+    "materials": 10,
+    "materialNames": [
+      "material",
+      "legs",
+      "u_leg",
+      "decor",
+      "name_board",
+      "base",
+      "pipe",
+      "bell",
+      "roof",
+      "thread"
+    ],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": 10,
+    "textureSlots": [],
+    "textures": 0,
+    "textureList": [],
+    "textureBytesMB": 0,
+    "textureVramMB": 0,
+    "maxTextureRes": "none",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -4.877,
+        -0.001,
+        -1.802
+      ],
+      "max": [
+        4.877,
+        5.503,
+        1.802
+      ],
+      "dim": [
+        9.754,
+        5.503,
+        3.604
+      ],
+      "center": [
+        0,
+        2.751,
+        0
+      ]
+    },
+    "maxDim": 9.754,
+    "originRel": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "pivot": "at base, horizontally centered",
+    "upAxisGuess": "Y (glTF standard)",
+    "scaleNote": "architectural scale (9.8 units ≈ metres)",
+    "rootNodes": [
+      {
+        "name": "Object_4",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Object_5",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Object_6",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Object_7",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Object_8",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Object_9",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Object_10",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Object_11",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Object_12",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Object_13",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "label": "1. Ink Void — start",
+    "p": 0
+  },
+  {
+    "label": "1. Ink Void — hold",
+    "p": 0.09911504424778761
+  },
+  {
+    "label": "1. Ink Void — end",
+    "p": 0.1414929203539823
+  },
+  {
+    "label": "2. The Mountain Gate — start",
+    "p": 0.1415929203539823
+  },
+  {
+    "label": "2. The Mountain Gate — hold",
+    "p": 0.21061946902654866
+  },
+  {
+    "label": "2. The Mountain Gate — end",
+    "p": 0.2742362831858407
+  },
+  {
+    "label": "3. Temple Ruins — start",
+    "p": 0.2743362831858407
+  },
+  {
+    "label": "3. Temple Ruins — hold",
+    "p": 0.371858407079646
+  },
+  {
+    "label": "3. Temple Ruins — end",
+    "p": 0.4423778761061947
+  },
+  {
+    "label": "4. The Legendary Staff — start",
+    "p": 0.4424778761061947
+  },
+  {
+    "label": "4. The Legendary Staff — hold",
+    "p": 0.5446902654867256
+  },
+  {
+    "label": "4. The Legendary Staff — end",
+    "p": 0.6282185840707964
+  },
+  {
+    "label": "5. The Guardian Awakens — start",
+    "p": 0.6283185840707964
+  },
+  {
+    "label": "5. The Guardian Awakens — hold",
+    "p": 0.7345132743362832
+  },
+  {
+    "label": "5. The Guardian Awakens — end",
+    "p": 0.8052097345132744
+  },
+  {
+    "label": "6. The Summit — start",
+    "p": 0.8053097345132744
+  },
+  {
+    "label": "6. The Summit — hold",
+    "p": 0.9571681415929204
+  },
+  {
+    "label": "6. The Summit — end",
+    "p": 0.9999
+  }
+]

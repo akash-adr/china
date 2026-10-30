@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Asset Check</title>
+<style>
+  :root { --bg:#16171b; --panel:#1e1f25; --line:#32343c; --ink:#e8e6e1; --gold:#c9a24a; --dim:#8e8b84; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; height:100%; background:var(--bg); color:var(--ink);
+    font:13px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif; }
+  #app { display:flex; height:100%; }
+  #side { width:290px; flex:none; background:var(--panel); border-right:1px solid var(--line);
+    overflow:auto; padding:14px; }
+  h1 { font-size:11px; text-transform:uppercase; letter-spacing:.14em; color:var(--gold); margin:0 0 10px; }
+  h2 { font-size:10px; text-transform:uppercase; letter-spacing:.12em; color:var(--dim);
+    margin:16px 0 6px; font-weight:600; }
+  .item { padding:6px 9px; border-radius:5px; cursor:pointer; display:flex; justify-content:space-between; gap:8px; }
+  .item:hover { background:#2a2c34; }
+  .item.on { background:var(--gold); color:#16171b; font-weight:600; }
+  .item .m { color:var(--dim); font-variant-numeric:tabular-nums; font-size:11px; }
+  .item.on .m { color:#16171b; }
+  button { background:#2a2c34; color:var(--ink); border:1px solid var(--line); border-radius:5px;
+    padding:7px 10px; cursor:pointer; font:inherit; width:100%; margin-bottom:6px; }
+  button:hover { border-color:var(--gold); }
+  button.on { background:var(--gold); color:#16171b; border-color:var(--gold); font-weight:600; }
+  label.chk { display:flex; gap:8px; align-items:center; margin-top:8px; cursor:pointer; color:var(--dim); }
+  label.sl { display:block; margin-top:10px; color:var(--dim); font-size:11px;
+    text-transform:uppercase; letter-spacing:.08em; }
+  label.sl span { color:var(--gold); float:right; font-variant-numeric:tabular-nums;
+    letter-spacing:0; }
+  label.sl input[type=range] { width:100%; margin-top:5px; accent-color:var(--gold); }
+  select { width:100%; background:#2a2c34; color:var(--ink); border:1px solid var(--line);
+    border-radius:5px; padding:6px; font:inherit; }
+  #stage { flex:1; position:relative; }
+  canvas { display:block; width:100%; height:100%; }
+  #hud { position:absolute; left:16px; top:14px; color:#b9b6ae; text-shadow:0 1px 4px #000;
+    pointer-events:none; font-variant-numeric:tabular-nums; }
+  #hud b { color:var(--gold); }
+  #hud .warn { color:#e0794a; }
+  #status { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+    color:var(--gold); letter-spacing:.12em; text-transform:uppercase; font-size:11px; }
+</style>
+</head>
+<body>
+<div id="app">
+  <aside id="side">
+    <h1>Asset check</h1>
+    <button id="lineup" class="on">All models — true scale</button>
+    <h2>Single model</h2>
+    <div id="list"></div>
+    <h2>View</h2>
+    <div style="display:flex;gap:6px">
+      <button data-view="front">Front</button>
+      <button data-view="side">Side</button>
+      <button data-view="three_quarter">3/4</button>
+    </div>
+    <label class="chk"><input type="checkbox" id="grid" checked> Metre grid + axes</label>
+    <label class="chk"><input type="checkbox" id="human" checked> 1.8 m human reference</label>
+    <label class="chk"><input type="checkbox" id="noscan"> Hide 80 m temple scan</label>
+    <label class="chk"><input type="checkbox" id="spin"> Auto-rotate</label>
+    <label class="chk"><input type="checkbox" id="play" checked> Play animation</label>
+
+    <h2>Look</h2>
+    <label class="chk"><input type="checkbox" id="cine"> Cinematic (fog + gold rim + bloom)</label>
+    <label class="chk"><input type="checkbox" id="recolour" checked> Gate: weathered recolour</label>
+
+    <div id="clipbox" style="display:none">
+      <h2>Clip</h2>
+      <select id="clip"></select>
+    </div>
+
+    <div id="staffbox" style="display:none">
+      <h2>Jingu Bang</h2>
+      <label class="sl">glow <span id="glowv">0.00</span>
+        <input type="range" id="glow" min="0" max="1" step="0.01" value="0"></label>
+      <label class="sl">extend <span id="extendv">0.00</span>
+        <input type="range" id="extend" min="0" max="1" step="0.01" value="0"></label>
+      <label class="sl">spin <span id="spinv">0.00</span>
+        <input type="range" id="spinr" min="0" max="4" step="0.05" value="0"></label>
+    </div>
+  </aside>
+  <div id="stage">
+    <div id="hud"></div>
+    <div id="status">Loading…</div>
+  </div>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

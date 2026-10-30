@@ -1,0 +1,14 @@
+anubis_divine_temple.glb                          33.42 MB ->     4.82 MB
+black_myth_wukong_-_ling_xu_zi_static.glb         37.28 MB ->     3.56 MB
+buddhist_temple_-_china.glb                       65.95 MB ->     2.51 MB
+chinese_dragon.glb                                25.50 MB ->    10.02 MB
+chinese_dragon_fan.glb                             6.77 MB ->     0.73 MB
+chinese_pagoda.glb                                44.50 MB ->     2.43 MB
+dragon_with_pearl.glb                             26.28 MB ->     1.87 MB
+fantasy_style_tree.glb                           185.49 MB ->     8.79 MB
+jinshan_temple_cishou_pagoda.glb                  85.02 MB ->     3.79 MB
+module_2_-_chinese_lantern.glb                     1.22 MB ->     0.05 MB
+staff_of_homa.glb                                  6.99 MB ->     0.11 MB
+stone_lion.glb                                    19.70 MB ->     1.65 MB
+thunderclap_temple.glb                            50.23 MB ->     3.51 MB
+DONE

@@ -1,0 +1,26 @@
+# ---- dependencies / build ----------------------------------------------
+node_modules/
+dist/
+*.tsbuildinfo
+
+# ---- source models ------------------------------------------------------
+# The raw Sketchfab downloads at the project root: ~725 MB across 15 files,
+# three of them over GitHub's 100 MB hard limit. They are inputs to the asset
+# pipeline, not outputs of it. The shipping versions live in public/models/
+# and ARE committed; rebuild these from the sources with
+# analysis/build/optimize.sh if you need them again.
+/*.glb
+
+# Analysis intermediates (~110 MB), fully regenerable from the sources.
+models-optimized/
+
+# ---- excluded assets ----------------------------------------------------
+# Not just large (~392 MB) — this folder holds assets ripped from commercial
+# games (Black Myth: Wukong, Genshin Impact). They are kept locally as a record
+# of what was evaluated and rejected, and must not be redistributed.
+_rejected/
+
+# ---- local -------------------------------------------------------------
+.DS_Store
+*.log
+.vite/

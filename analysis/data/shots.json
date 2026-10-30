@@ -1,0 +1,132 @@
+[
+  {
+    "model": "anubis_divine_temple",
+    "shots": [
+      "analysis/screenshots/anubis_divine_temple__front.png",
+      "analysis/screenshots/anubis_divine_temple__side.png",
+      "analysis/screenshots/anubis_divine_temple__three_quarter.png"
+    ],
+    "loadMs": 4623,
+    "error": null
+  },
+  {
+    "model": "black_myth_wukong_-_ling_xu_zi_static",
+    "shots": [
+      "analysis/screenshots/black_myth_wukong_-_ling_xu_zi_static__front.png",
+      "analysis/screenshots/black_myth_wukong_-_ling_xu_zi_static__side.png",
+      "analysis/screenshots/black_myth_wukong_-_ling_xu_zi_static__three_quarter.png"
+    ],
+    "loadMs": 991,
+    "error": null
+  },
+  {
+    "model": "buddhist_temple_-_china",
+    "shots": [
+      "analysis/screenshots/buddhist_temple_-_china__front.png",
+      "analysis/screenshots/buddhist_temple_-_china__side.png",
+      "analysis/screenshots/buddhist_temple_-_china__three_quarter.png"
+    ],
+    "loadMs": 1000,
+    "error": null
+  },
+  {
+    "model": "chinese_dragon",
+    "shots": [
+      "analysis/screenshots/chinese_dragon__front.png",
+      "analysis/screenshots/chinese_dragon__side.png",
+      "analysis/screenshots/chinese_dragon__three_quarter.png"
+    ],
+    "loadMs": 413,
+    "error": null
+  },
+  {
+    "model": "chinese_dragon_fan",
+    "shots": [
+      "analysis/screenshots/chinese_dragon_fan__front.png",
+      "analysis/screenshots/chinese_dragon_fan__side.png",
+      "analysis/screenshots/chinese_dragon_fan__three_quarter.png"
+    ],
+    "loadMs": 365,
+    "error": null
+  },
+  {
+    "model": "chinese_pagoda",
+    "shots": [
+      "analysis/screenshots/chinese_pagoda__front.png",
+      "analysis/screenshots/chinese_pagoda__side.png",
+      "analysis/screenshots/chinese_pagoda__three_quarter.png"
+    ],
+    "loadMs": 1006,
+    "error": null
+  },
+  {
+    "model": "dragon_with_pearl",
+    "shots": [
+      "analysis/screenshots/dragon_with_pearl__front.png",
+      "analysis/screenshots/dragon_with_pearl__side.png",
+      "analysis/screenshots/dragon_with_pearl__three_quarter.png"
+    ],
+    "loadMs": 101,
+    "error": null
+  },
+  {
+    "model": "fantasy_style_tree",
+    "shots": [
+      "analysis/screenshots/fantasy_style_tree__front.png",
+      "analysis/screenshots/fantasy_style_tree__side.png",
+      "analysis/screenshots/fantasy_style_tree__three_quarter.png"
+    ],
+    "loadMs": 779,
+    "error": null
+  },
+  {
+    "model": "jinshan_temple_cishou_pagoda",
+    "shots": [
+      "analysis/screenshots/jinshan_temple_cishou_pagoda__front.png",
+      "analysis/screenshots/jinshan_temple_cishou_pagoda__side.png",
+      "analysis/screenshots/jinshan_temple_cishou_pagoda__three_quarter.png"
+    ],
+    "loadMs": 1149,
+    "error": null
+  },
+  {
+    "model": "module_2_-_chinese_lantern",
+    "shots": [
+      "analysis/screenshots/module_2_-_chinese_lantern__front.png",
+      "analysis/screenshots/module_2_-_chinese_lantern__side.png",
+      "analysis/screenshots/module_2_-_chinese_lantern__three_quarter.png"
+    ],
+    "loadMs": 426,
+    "error": null
+  },
+  {
+    "model": "staff_of_homa",
+    "shots": [
+      "analysis/screenshots/staff_of_homa__front.png",
+      "analysis/screenshots/staff_of_homa__side.png",
+      "analysis/screenshots/staff_of_homa__three_quarter.png"
+    ],
+    "loadMs": 146,
+    "error": null
+  },
+  {
+    "model": "stone_lion",
+    "shots": [
+      "analysis/screenshots/stone_lion__front.png",
+      "analysis/screenshots/stone_lion__side.png",
+      "analysis/screenshots/stone_lion__three_quarter.png"
+    ],
+    "loadMs": 297,
+    "error": null
+  },
+  {
+    "model": "thunderclap_temple",
+    "shots": [
+      "analysis/screenshots/thunderclap_temple__front.png",
+      "analysis/screenshots/thunderclap_temple__side.png",
+      "analysis/screenshots/thunderclap_temple__three_quarter.png"
+    ],
+    "loadMs": 436,
+    "error": null
+  }
+]

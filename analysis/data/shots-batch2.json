@@ -1,0 +1,101 @@
+[
+  {
+    "file": "ancient_ruins.glb",
+    "name": "ancient_ruins",
+    "shots": [
+      "analysis/screenshots/ancient_ruins__front.png",
+      "analysis/screenshots/ancient_ruins__side.png",
+      "analysis/screenshots/ancient_ruins__three_quarter.png"
+    ],
+    "loadMs": 280,
+    "error": null
+  },
+  {
+    "file": "broken_medieval_column_set.glb",
+    "name": "broken_medieval_column_set",
+    "shots": [
+      "analysis/screenshots/broken_medieval_column_set__front.png",
+      "analysis/screenshots/broken_medieval_column_set__side.png",
+      "analysis/screenshots/broken_medieval_column_set__three_quarter.png"
+    ],
+    "loadMs": 934,
+    "error": null
+  },
+  {
+    "file": "cool_staff.glb",
+    "name": "cool_staff",
+    "shots": [
+      "analysis/screenshots/cool_staff__front.png",
+      "analysis/screenshots/cool_staff__side.png",
+      "analysis/screenshots/cool_staff__three_quarter.png"
+    ],
+    "loadMs": 260,
+    "error": null
+  },
+  {
+    "file": "stylized_rock.glb",
+    "name": "stylized_rock",
+    "shots": [
+      "analysis/screenshots/stylized_rock__front.png",
+      "analysis/screenshots/stylized_rock__side.png",
+      "analysis/screenshots/stylized_rock__three_quarter.png"
+    ],
+    "loadMs": 40,
+    "error": null
+  },
+  {
+    "file": "stylized_rock-2.glb",
+    "name": "stylized_rock-2",
+    "shots": [
+      "analysis/screenshots/stylized_rock-2__front.png",
+      "analysis/screenshots/stylized_rock-2__side.png",
+      "analysis/screenshots/stylized_rock-2__three_quarter.png"
+    ],
+    "loadMs": 281,
+    "error": null
+  },
+  {
+    "file": "stylized_rock-3.glb",
+    "name": "stylized_rock-3",
+    "shots": [
+      "analysis/screenshots/stylized_rock-3__front.png",
+      "analysis/screenshots/stylized_rock-3__side.png",
+      "analysis/screenshots/stylized_rock-3__three_quarter.png"
+    ],
+    "loadMs": 1644,
+    "error": null
+  },
+  {
+    "file": "torri_gate.glb",
+    "name": "torri_gate",
+    "shots": [
+      "analysis/screenshots/torri_gate__front.png",
+      "analysis/screenshots/torri_gate__side.png",
+      "analysis/screenshots/torri_gate__three_quarter.png"
+    ],
+    "loadMs": 65,
+    "error": null
+  },
+  {
+    "file": "black-myth-wukong-kangjinlongfrom-the-vault/source/kjwl.glb",
+    "name": "kjwl",
+    "shots": [
+      "analysis/screenshots/kjwl__front.png",
+      "analysis/screenshots/kjwl__side.png",
+      "analysis/screenshots/kjwl__three_quarter.png"
+    ],
+    "loadMs": 655,
+    "error": null
+  },
+  {
+    "file": "pagoda-and-cherry-blossom-game-scene-baked/source/japanese_cherrybake.glb",
+    "name": "japanese_cherrybake",
+    "shots": [
+      "analysis/screenshots/japanese_cherrybake__front.png",
+      "analysis/screenshots/japanese_cherrybake__side.png",
+      "analysis/screenshots/japanese_cherrybake__three_quarter.png"
+    ],
+    "loadMs": 559,
+    "error": null
+  }
+]

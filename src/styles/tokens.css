@@ -1,0 +1,122 @@
+/**
+ * Design tokens. Everything visual references these — no literal colours or
+ * font stacks anywhere else in the app.
+ */
+:root {
+  /* ---- palette -------------------------------------------------------- */
+  --void: #050505;          /* the page is always this */
+  --ink: #0E0D0B;
+  --ash: #2A2621;
+
+  --gold-deep: #8A6A2F;
+  --gold: #C9A24A;
+  --gold-bright: #F2D488;
+
+  --ember: #FF8A3D;
+  --blood: #7A1414;         /* used rarely, for a single accent at most */
+  --bone: #E8DFC9;          /* body text; never pure white */
+
+  /* ---- type ----------------------------------------------------------- */
+  --font-hero: 'Zhi Mang Xing', 'Ma Shan Zheng', cursive;
+  --font-cal: 'Ma Shan Zheng', 'Zhi Mang Xing', cursive;
+  --font-display: 'Cinzel Decorative', 'Cinzel', serif;
+  --font-label: 'Cinzel', serif;
+  --font-body: 'Cormorant Garamond', Georgia, serif;
+
+  --tracking-label: 0.3em;
+
+  /* ---- scale ---------------------------------------------------------- */
+  --step-hero: clamp(3.5rem, 11vw, 10rem);
+  --step-title: clamp(1.6rem, 3.6vw, 3.2rem);
+  --step-label: clamp(0.68rem, 1vw, 0.82rem);
+  --step-body: clamp(1rem, 1.4vw, 1.2rem);
+
+  /* ---- motion --------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-slow: 1200ms;
+  --dur-med: 700ms;
+
+  /* ---- layout --------------------------------------------------------- */
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+  --z-canvas: 0;
+  --z-overlay: 10;
+  --z-chrome: 20;
+}
+
+/* ---------------------------------------------------------------------- */
+/* .gold-glow — metallic text.                                             */
+/* The gradient is clipped to the glyphs and is wider than the box, so the  */
+/* shimmer can sweep it. Glow is three layered drop-shadows: a tight warm   */
+/* core, a wide gold halo, and a faint ember rim that only reads at the     */
+/* edges. Flicker rides on opacity so it never shifts layout.               */
+/* ---------------------------------------------------------------------- */
+.gold-glow {
+  --glow-core: 0.30;
+  --glow-halo: 0.30;
+  --glow-ember: 0.18;
+
+  background-image: linear-gradient(
+    100deg,
+    var(--gold-deep) 0%,
+    var(--gold-bright) 14%,
+    var(--gold) 28%,
+    #FFF3C4 42%,
+    #B8862F 58%,
+    var(--gold-bright) 76%,
+    var(--gold-deep) 100%
+  );
+  background-size: 250% 100%;
+  background-position: 0% 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  /* The glow is three layered text-shadows, not filter: drop-shadow().
+   *
+   * Measured: drop-shadow is free when static, but animating background-position
+   * underneath it forces the filter to re-rasterise every frame, and on an M4
+   * that took the whole page from 60 fps to 22.6 — one heading was enough.
+   * text-shadow composites the same look for nothing. Numbers and the bisect
+   * that found it are in analysis/build/perf-bisect2.mjs. */
+  text-shadow:
+    0 0 0.12em rgba(255, 243, 196, var(--glow-core)),
+    0 0 0.7em rgba(201, 162, 74, var(--glow-halo)),
+    0 0 1.9em rgba(255, 138, 61, var(--glow-ember));
+
+  animation:
+    gold-shimmer 9s var(--ease-out) infinite,
+    ember-flicker 5.5s ease-in-out infinite;
+  will-change: background-position, opacity;
+}
+
+@keyframes gold-shimmer {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Deliberately irregular, so it reads as a flame rather than a pulse. */
+@keyframes ember-flicker {
+  0%, 100% { opacity: 1; }
+  12%      { opacity: 0.94; }
+  19%      { opacity: 1; }
+  41%      { opacity: 0.9; }
+  47%      { opacity: 0.99; }
+  68%      { opacity: 0.93; }
+  73%      { opacity: 1; }
+  88%      { opacity: 0.96; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gold-glow {
+    animation: none;
+    background-position: 35% 50%;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

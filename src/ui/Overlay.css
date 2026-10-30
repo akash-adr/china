@@ -1,0 +1,147 @@
+/* Chapter titles and the chapter indicator. */
+
+.chapter-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--gutter);
+}
+.chapter-section[data-align='left']  .chapter-sticky { justify-content: flex-start; }
+.chapter-section[data-align='right'] .chapter-sticky { justify-content: flex-end; }
+.chapter-section[data-align='center'].chapter-sticky,
+.chapter-section[data-align='center'] .chapter-sticky { justify-content: center; }
+
+.chapter-title {
+  max-width: 22ch;
+  opacity: 0;
+  transform: translateY(2.2rem);
+  transition:
+    opacity var(--dur-slow) var(--ease-out),
+    transform var(--dur-slow) var(--ease-out);
+  will-change: opacity, transform;
+}
+.chapter-title[data-active='true'] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.chapter-title .numeral {
+  display: block;
+  font-family: var(--font-cal);
+  font-size: var(--step-title);
+  line-height: 1;
+  margin-bottom: 0.4em;
+  opacity: 0.75;
+}
+
+.chapter-title .hanzi {
+  display: block;
+  font-family: var(--font-hero);
+  font-size: var(--step-hero);
+  line-height: 0.95;
+  margin: 0 0 0.12em;
+  font-weight: 400;
+}
+
+.chapter-title .subtitle {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--step-title);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5em;
+}
+
+.chapter-title .index {
+  display: block;
+  font-family: var(--font-label);
+  font-size: var(--step-label);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  color: var(--gold-deep);
+}
+
+/* Alternate sides so the journey does not feel like a slideshow. */
+.chapter-section[data-align='left']  { justify-content: flex-start; }
+.chapter-section[data-align='right'] { justify-content: flex-end; text-align: right; }
+.chapter-section[data-align='center']{ justify-content: center; text-align: center; }
+
+/* ---- chapter indicator ------------------------------------------------ */
+.chapter-dots {
+  position: fixed;
+  right: calc(var(--gutter) * 0.75);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: var(--z-chrome);
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.chapter-dots::before {
+  content: '';
+  position: absolute;
+  top: -0.6rem;
+  bottom: -0.6rem;
+  width: 1px;
+  background: linear-gradient(
+    to bottom, transparent, rgba(201, 162, 74, 0.22) 15%,
+    rgba(201, 162, 74, 0.22) 85%, transparent);
+}
+
+.chapter-dots button {
+  position: relative;
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--ash);
+  outline: 1px solid rgba(201, 162, 74, 0.28);
+  outline-offset: 0;
+  cursor: pointer;
+  transition: background var(--dur-med) var(--ease-out),
+              transform var(--dur-med) var(--ease-out);
+}
+.chapter-dots button:hover { background: var(--gold-deep); }
+.chapter-dots button[data-active='true'] {
+  background: var(--gold);
+  transform: scale(1.5);
+  box-shadow: 0 0 10px rgba(201, 162, 74, 0.65), 0 0 22px rgba(255, 138, 61, 0.25);
+}
+
+.chapter-dots .dot-label {
+  position: absolute;
+  right: 1.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  font-family: var(--font-label);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  color: var(--gold);
+  opacity: 0;
+  transition: opacity var(--dur-med) var(--ease-out);
+  pointer-events: none;
+}
+.chapter-dots button:hover .dot-label { opacity: 1; }
+
+/* ---- scroll hint ------------------------------------------------------ */
+.scroll-hint {
+  position: fixed;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  z-index: var(--z-chrome);
+  font-family: var(--font-label);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  color: var(--gold-deep);
+  transition: opacity var(--dur-med) var(--ease-out);
+}

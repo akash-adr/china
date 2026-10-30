@@ -1,0 +1,47 @@
+@import './tokens.css';
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--void);
+  color: var(--bone);
+  font-family: var(--font-body);
+  font-size: var(--step-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Lenis drives scrolling; it needs the native scrollbar to exist but not to
+   fight it for smoothing. */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+
+::selection { background: rgba(201, 162, 74, 0.25); color: var(--bone); }
+
+.label {
+  font-family: var(--font-label);
+  font-size: var(--step-label);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  color: var(--gold);
+}
+
+/* The one persistent canvas, fixed behind everything. */
+.canvas-layer {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-canvas);
+  pointer-events: none;
+}
+
+/* The scroll container: tall, transparent, generates the scrollbar. */
+.scroll-root { position: relative; z-index: var(--z-overlay); }
+
+.chapter-section {
+  position: relative;
+  pointer-events: none;
+}

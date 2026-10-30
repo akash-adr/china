@@ -1,0 +1,2035 @@
+[
+  {
+    "file": "ancient_ruins.glb",
+    "path": "ancient_ruins.glb",
+    "warnings": [],
+    "sizeMB": 33.18,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [],
+    "meshes": 27,
+    "primitives": 27,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 2090,
+    "rawVertices": 2081,
+    "sceneTriangles": 2090,
+    "sceneVertices": 2081,
+    "nodes": 61,
+    "drawCalls": 27,
+    "materials": 3,
+    "materialNames": [
+      "M_AncientRuins_Plants",
+      "M_AncientRuins_Props",
+      "M_AncientRuins_Rocks"
+    ],
+    "alphaModes": [
+      "BLEND",
+      "OPAQUE"
+    ],
+    "doubleSided": 3,
+    "textureSlots": [
+      "baseColor",
+      "normal",
+      "metallicRoughness",
+      "occlusion"
+    ],
+    "textures": 9,
+    "textureList": [
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 732,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 523,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 6173,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 2235,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 7837,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 6335,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1810,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 7977,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "512x512",
+        "px": 262144,
+        "kb": 196,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 33.02,
+    "textureVramMB": 171.6,
+    "maxTextureRes": "2048x2048",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -5.699,
+        0,
+        -5.92
+      ],
+      "max": [
+        5.65,
+        5.876,
+        3.348
+      ],
+      "dim": [
+        11.349,
+        5.876,
+        9.268
+      ],
+      "center": [
+        -0.024,
+        2.938,
+        -1.286
+      ]
+    },
+    "maxDim": 11.349,
+    "originRel": {
+      "x": 0.502,
+      "y": 0,
+      "z": 0.639
+    },
+    "pivot": "at base, horizontally offset",
+    "upAxisGuess": "possibly Z-up (depth > height)",
+    "scaleNote": "architectural scale (11.3 units ≈ metres)",
+    "rootNodes": [
+      {
+        "name": "Sketchfab_model",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          -0.707,
+          0,
+          0,
+          0.707
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "file": "broken_medieval_column_set.glb",
+    "path": "broken_medieval_column_set.glb",
+    "warnings": [
+      "12 texture(s) at 4K or larger"
+    ],
+    "sizeMB": 55.78,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [],
+    "meshes": 4,
+    "primitives": 4,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 4664,
+    "rawVertices": 2624,
+    "sceneTriangles": 4664,
+    "sceneVertices": 2624,
+    "nodes": 11,
+    "drawCalls": 4,
+    "materials": 4,
+    "materialNames": [
+      "round_old_pillar_2",
+      "round_old_pillar_1",
+      "round_old_pillar_3",
+      "round_old_pillar_4"
+    ],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": 4,
+    "textureSlots": [
+      "baseColor",
+      "normal",
+      "metallicRoughness"
+    ],
+    "textures": 12,
+    "textureList": [
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 6064,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 1828,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 8936,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 5909,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 2245,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 7246,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 4810,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 1841,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 6288,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 4025,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 1249,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 6496,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 55.6,
+    "textureVramMB": 1021.4,
+    "maxTextureRes": "4096x4096",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -19.611,
+        -0.238,
+        -1.289
+      ],
+      "max": [
+        1.274,
+        12.947,
+        1.274
+      ],
+      "dim": [
+        20.886,
+        13.184,
+        2.562
+      ],
+      "center": [
+        -9.169,
+        6.354,
+        -0.007
+      ]
+    },
+    "maxDim": 20.886,
+    "originRel": {
+      "x": 0.939,
+      "y": 0.018,
+      "z": 0.503
+    },
+    "pivot": "at base, horizontally offset",
+    "upAxisGuess": "Y (glTF standard)",
+    "scaleNote": "architectural scale (20.9 units ≈ metres)",
+    "rootNodes": [
+      {
+        "name": "Sketchfab_model",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          -0.707,
+          0,
+          0,
+          0.707
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "file": "cool_staff.glb",
+    "path": "cool_staff.glb",
+    "warnings": [
+      "3 texture(s) at 4K or larger"
+    ],
+    "sizeMB": 5.63,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [
+      "KHR_materials_emissive_strength",
+      "KHR_materials_specular"
+    ],
+    "meshes": 2,
+    "primitives": 2,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 4112,
+    "rawVertices": 2484,
+    "sceneTriangles": 4112,
+    "sceneVertices": 2484,
+    "nodes": 7,
+    "drawCalls": 2,
+    "materials": 2,
+    "materialNames": [
+      "Material.002",
+      "Material.001"
+    ],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": 2,
+    "textureSlots": [
+      "baseColor",
+      "normal",
+      "metallicRoughness"
+    ],
+    "textures": 3,
+    "textureList": [
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 1904,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 750,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 2892,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 5.42,
+    "textureVramMB": 255.4,
+    "maxTextureRes": "4096x4096",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -2.946,
+        -0.679,
+        -0.838
+      ],
+      "max": [
+        1.21,
+        1.677,
+        2.031
+      ],
+      "dim": [
+        4.156,
+        2.357,
+        2.869
+      ],
+      "center": [
+        -0.868,
+        0.499,
+        0.597
+      ]
+    },
+    "maxDim": 4.156,
+    "originRel": {
+      "x": 0.709,
+      "y": 0.288,
+      "z": 0.292
+    },
+    "pivot": "offset inside bounds",
+    "upAxisGuess": "possibly Z-up (depth > height)",
+    "scaleNote": "architectural scale (4.2 units ≈ metres)",
+    "rootNodes": [
+      {
+        "name": "Sketchfab_model",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          -0.335,
+          0.802,
+          0.426,
+          0.253
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "file": "stylized_rock.glb",
+    "path": "stylized_rock.glb",
+    "warnings": [],
+    "sizeMB": 1.52,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [],
+    "meshes": 1,
+    "primitives": 1,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 670,
+    "rawVertices": 362,
+    "sceneTriangles": 670,
+    "sceneVertices": 362,
+    "nodes": 3,
+    "drawCalls": 1,
+    "materials": 1,
+    "materialNames": [
+      "defaultMat"
+    ],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": 1,
+    "textureSlots": [
+      "baseColor",
+      "normal",
+      "metallicRoughness",
+      "occlusion"
+    ],
+    "textures": 3,
+    "textureList": [
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 151,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 695,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 680,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 1.49,
+    "textureVramMB": 16,
+    "maxTextureRes": "1024x1024",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -0.09,
+        -0.098,
+        -0.045
+      ],
+      "max": [
+        0.053,
+        0.123,
+        0.062
+      ],
+      "dim": [
+        0.143,
+        0.222,
+        0.107
+      ],
+      "center": [
+        -0.018,
+        0.013,
+        0.008
+      ]
+    },
+    "maxDim": 0.222,
+    "originRel": {
+      "x": 0.627,
+      "y": 0.444,
+      "z": 0.424
+    },
+    "pivot": "offset inside bounds",
+    "upAxisGuess": "Y (glTF standard)",
+    "scaleNote": "human/prop scale (0.22 units ≈ metres)",
+    "rootNodes": [
+      {
+        "name": "Sketchfab_model",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          -0.707,
+          0,
+          0,
+          0.707
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "file": "stylized_rock-2.glb",
+    "path": "stylized_rock-2.glb",
+    "warnings": [
+      "3 texture(s) at 4K or larger"
+    ],
+    "sizeMB": 26.34,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [
+      "KHR_materials_specular"
+    ],
+    "meshes": 1,
+    "primitives": 1,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 3754,
+    "rawVertices": 2136,
+    "sceneTriangles": 3754,
+    "sceneVertices": 2136,
+    "nodes": 5,
+    "drawCalls": 1,
+    "materials": 1,
+    "materialNames": [
+      "Rock_MAT"
+    ],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": 1,
+    "textureSlots": [
+      "baseColor",
+      "normal",
+      "metallicRoughness"
+    ],
+    "textures": 3,
+    "textureList": [
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 15371,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 555,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 10869,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 26.17,
+    "textureVramMB": 255.4,
+    "maxTextureRes": "4096x4096",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -1.572,
+        0,
+        -1.51
+      ],
+      "max": [
+        1.499,
+        2.274,
+        1.292
+      ],
+      "dim": [
+        3.07,
+        2.274,
+        2.802
+      ],
+      "center": [
+        -0.036,
+        1.137,
+        -0.109
+      ]
+    },
+    "maxDim": 3.07,
+    "originRel": {
+      "x": 0.512,
+      "y": 0,
+      "z": 0.539
+    },
+    "pivot": "at base, horizontally centered",
+    "upAxisGuess": "possibly Z-up (depth > height)",
+    "scaleNote": "architectural scale (3.1 units ≈ metres)",
+    "rootNodes": [
+      {
+        "name": "Sketchfab_model",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          -0.707,
+          0,
+          0,
+          0.707
+        ],
+        "s": [
+          1.335,
+          1.335,
+          1.335
+        ]
+      }
+    ]
+  },
+  {
+    "file": "stylized_rock-3.glb",
+    "path": "stylized_rock-3.glb",
+    "warnings": [
+      "3 texture(s) at 4K or larger"
+    ],
+    "sizeMB": 204.55,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [
+      "KHR_materials_emissive_strength"
+    ],
+    "meshes": 59,
+    "primitives": 59,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 2705902,
+    "rawVertices": 1405885,
+    "sceneTriangles": 2705902,
+    "sceneVertices": 1405885,
+    "nodes": 101,
+    "drawCalls": 59,
+    "materials": 24,
+    "materialNames": [
+      "kaya1",
+      "kaya3",
+      "Material.001",
+      "Material.002",
+      "kaya6",
+      "zemin",
+      "kaya4",
+      "Material.004",
+      "Material.003",
+      "Material.005",
+      "set1",
+      "set5",
+      "set3",
+      "set2",
+      "sett6",
+      "set4",
+      "kaya5",
+      "material",
+      "magic",
+      "material_19",
+      "material_20",
+      "material_21",
+      "material_22",
+      "material_23"
+    ],
+    "alphaModes": [
+      "OPAQUE",
+      "BLEND"
+    ],
+    "doubleSided": 24,
+    "textureSlots": [
+      "baseColor",
+      "normal",
+      "metallicRoughness",
+      "occlusion",
+      "emissive"
+    ],
+    "textures": 54,
+    "textureList": [
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 4215,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 8295,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 17833,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1177,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 2177,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 2686,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 975,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 2247,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 2649,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1240,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 2496,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 5623,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 2686,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 848,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1685,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 2865,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 984,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1842,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 3077,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 673,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1166,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 4035,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 140,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1168,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 403,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 2681,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 846,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1105,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 203,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 886,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 2415,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 2821,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 554,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1683,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 985,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1758,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 746,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 958,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1773,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 3050,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 693,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 2643,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 2427,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1850,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 445,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 2045,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1204,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 858,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1103,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "2048x1024",
+        "px": 2097152,
+        "kb": 2091,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "1024x512",
+        "px": 524288,
+        "kb": 399,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "512x512",
+        "px": 262144,
+        "kb": 326,
+        "npot": false
+      },
+      {
+        "name": "(unnamed)",
+        "mime": "image/png",
+        "res": "512x256",
+        "px": 131072,
+        "kb": 195,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 109.3,
+    "textureVramMB": 1270.8,
+    "maxTextureRes": "4096x4096",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -4.62,
+        -0.78,
+        -7.398
+      ],
+      "max": [
+        3.933,
+        6.151,
+        4.993
+      ],
+      "dim": [
+        8.553,
+        6.931,
+        12.391
+      ],
+      "center": [
+        -0.344,
+        2.685,
+        -1.203
+      ]
+    },
+    "maxDim": 12.391,
+    "originRel": {
+      "x": 0.54,
+      "y": 0.113,
+      "z": 0.597
+    },
+    "pivot": "offset inside bounds",
+    "upAxisGuess": "possibly Z-up (depth > height)",
+    "scaleNote": "architectural scale (12.4 units ≈ metres)",
+    "rootNodes": [
+      {
+        "name": "Sketchfab_model",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          -0.707,
+          0,
+          0,
+          0.707
+        ],
+        "s": [
+          0.667,
+          0.667,
+          0.667
+        ]
+      }
+    ]
+  },
+  {
+    "file": "torri_gate.glb",
+    "path": "torri_gate.glb",
+    "warnings": [],
+    "sizeMB": 3.65,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [],
+    "meshes": 10,
+    "primitives": 10,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 72974,
+    "rawVertices": 91912,
+    "sceneTriangles": 72974,
+    "sceneVertices": 91912,
+    "nodes": 14,
+    "drawCalls": 10,
+    "materials": 10,
+    "materialNames": [
+      "material",
+      "legs",
+      "u_leg",
+      "decor",
+      "name_board",
+      "base",
+      "pipe",
+      "bell",
+      "roof",
+      "thread"
+    ],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": 10,
+    "textureSlots": [],
+    "textures": 0,
+    "textureList": [],
+    "textureBytesMB": 0,
+    "textureVramMB": 0,
+    "maxTextureRes": "none",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -4.877,
+        -0.001,
+        -1.802
+      ],
+      "max": [
+        4.877,
+        5.503,
+        1.802
+      ],
+      "dim": [
+        9.754,
+        5.504,
+        3.603
+      ],
+      "center": [
+        0,
+        2.751,
+        0
+      ]
+    },
+    "maxDim": 9.754,
+    "originRel": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "pivot": "at base, horizontally centered",
+    "upAxisGuess": "Y (glTF standard)",
+    "scaleNote": "architectural scale (9.8 units ≈ metres)",
+    "rootNodes": [
+      {
+        "name": "Sketchfab_model",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          -0.707,
+          0,
+          0,
+          0.707
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "file": "kjwl.glb",
+    "path": "black-myth-wukong-kangjinlongfrom-the-vault/source/kjwl.glb",
+    "warnings": [],
+    "sizeMB": 93.37,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [],
+    "meshes": 1,
+    "primitives": 10,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 178216,
+    "rawVertices": 105610,
+    "sceneTriangles": 178216,
+    "sceneVertices": 105610,
+    "nodes": 513,
+    "drawCalls": 10,
+    "materials": 6,
+    "materialNames": [
+      "T_LYS_KangJinLong_tou",
+      "T_LYS_KangJinLong_shenti",
+      "T_LYS_KangJinLong_eye",
+      "T_LYS_KangJinLong_weiba",
+      "M_KJL_Dither_Inst",
+      "M_invisible"
+    ],
+    "alphaModes": [
+      "OPAQUE",
+      "BLEND"
+    ],
+    "doubleSided": 6,
+    "textureSlots": [
+      "baseColor",
+      "normal",
+      "metallicRoughness"
+    ],
+    "textures": 12,
+    "textureList": [
+      {
+        "name": "T_LYS_KangJinLong_tou_N",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 6862,
+        "npot": false
+      },
+      {
+        "name": "T_LYS_KangJinLong_tou_D",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 4350,
+        "npot": false
+      },
+      {
+        "name": "T_LYS_KangJinLong_shenti_N",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 6724,
+        "npot": false
+      },
+      {
+        "name": "T_LYS_KangJinLong_shenti_D",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 5640,
+        "npot": false
+      },
+      {
+        "name": "T_LYS_KangJinLong_eye_N",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 3227,
+        "npot": false
+      },
+      {
+        "name": "T_LYS_KangJinLong_eye_D",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1176,
+        "npot": false
+      },
+      {
+        "name": "T_LYS_KangJinLong_weiba_N",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 6193,
+        "npot": false
+      },
+      {
+        "name": "T_LYS_KangJinLong_weiba_D",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 5669,
+        "npot": false
+      },
+      {
+        "name": "T_LYS_KangJinLong_qi_N",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 2834,
+        "npot": false
+      },
+      {
+        "name": "T_LYS_KangJinLong_qi_D",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 5235,
+        "npot": false
+      },
+      {
+        "name": "T_LYS_KJLDragon_jiao_m",
+        "mime": "image/png",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 51,
+        "npot": false
+      },
+      {
+        "name": "T_LYS_KJLDragon_zhuazi_m",
+        "mime": "image/png",
+        "res": "1024x1024",
+        "px": 1048576,
+        "kb": 156,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 46.99,
+    "textureVramMB": 223.4,
+    "maxTextureRes": "2048x2048",
+    "animations": [
+      {
+        "name": "AS_LYS_KJLDragon_Atk_00.001",
+        "duration": 16.33,
+        "channels": 1533,
+        "interpolations": [
+          "LINEAR",
+          "STEP"
+        ]
+      },
+      {
+        "name": "AS_LYS_KJLDragon_Atk_01",
+        "duration": 24.17,
+        "channels": 1533,
+        "interpolations": [
+          "LINEAR",
+          "STEP"
+        ]
+      },
+      {
+        "name": "AS_LYS_KJLDragon_Atk_02",
+        "duration": 16.67,
+        "channels": 1533,
+        "interpolations": [
+          "LINEAR",
+          "STEP"
+        ]
+      },
+      {
+        "name": "AS_LYS_KJLDragon_Atk_06",
+        "duration": 37.5,
+        "channels": 1533,
+        "interpolations": [
+          "LINEAR",
+          "STEP"
+        ]
+      },
+      {
+        "name": "AS_LYS_KJLDragon_Atk_07",
+        "duration": 32.75,
+        "channels": 1533,
+        "interpolations": [
+          "LINEAR",
+          "STEP"
+        ]
+      },
+      {
+        "name": "AS_LYS_KJLDragon_Atk_08",
+        "duration": 31.88,
+        "channels": 1533,
+        "interpolations": [
+          "LINEAR",
+          "STEP"
+        ]
+      },
+      {
+        "name": "AS_LYS_KJLDragon_Atk_09",
+        "duration": 18.33,
+        "channels": 1533,
+        "interpolations": [
+          "LINEAR",
+          "STEP"
+        ]
+      }
+    ],
+    "skins": 1,
+    "jointCount": 511,
+    "skinned": true,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -476.673,
+        -173.643,
+        -3793.95
+      ],
+      "max": [
+        450.598,
+        802.02,
+        2720.272
+      ],
+      "dim": [
+        927.272,
+        975.663,
+        6514.222
+      ],
+      "center": [
+        -13.038,
+        314.189,
+        -536.839
+      ]
+    },
+    "maxDim": 6514.222,
+    "originRel": {
+      "x": 0.514,
+      "y": 0.178,
+      "z": 0.582
+    },
+    "pivot": "offset inside bounds",
+    "upAxisGuess": "possibly Z-up (depth > height)",
+    "scaleNote": "very large (6514 units) — likely cm units or oversized, scale down",
+    "rootNodes": [
+      {
+        "name": "SK_LYS_KJLWoman_D",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "file": "japanese_cherrybake.glb",
+    "path": "pagoda-and-cherry-blossom-game-scene-baked/source/japanese_cherrybake.glb",
+    "warnings": [
+      "1 texture(s) at 4K or larger"
+    ],
+    "sizeMB": 45.69,
+    "generator": "glTF-Transform v4.5.1",
+    "extensions": [
+      "KHR_materials_emissive_strength",
+      "KHR_materials_ior",
+      "KHR_materials_transmission",
+      "KHR_materials_unlit"
+    ],
+    "meshes": 9,
+    "primitives": 11,
+    "primitiveModes": [
+      4
+    ],
+    "rawTriangles": 38668,
+    "rawVertices": 64640,
+    "sceneTriangles": 57194,
+    "sceneVertices": 82369,
+    "nodes": 42,
+    "drawCalls": 42,
+    "materials": 11,
+    "materialNames": [
+      "sky",
+      "sakura_billboard",
+      "stairs_bake",
+      "ground_bake",
+      "pagoda_bake",
+      "Pagoda_gold",
+      "Lantern_paper",
+      "Lantern_metal",
+      "Lantern_wood",
+      "stone_lantern_bake",
+      "Material.001"
+    ],
+    "alphaModes": [
+      "OPAQUE",
+      "MASK"
+    ],
+    "doubleSided": 11,
+    "textureSlots": [
+      "baseColor",
+      "normal",
+      "occlusion",
+      "emissive"
+    ],
+    "textures": 12,
+    "textureList": [
+      {
+        "name": "Pagoda_Emission",
+        "mime": "image/png",
+        "res": "4096x4096",
+        "px": 16777216,
+        "kb": 9649,
+        "npot": false
+      },
+      {
+        "name": "sakura_a_emission",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 2974,
+        "npot": false
+      },
+      {
+        "name": "sakura_a_normal",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 3260,
+        "npot": false
+      },
+      {
+        "name": "sakura_a_ao",
+        "mime": "image/jpeg",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 1010,
+        "npot": false
+      },
+      {
+        "name": "sakura_a_diffuse-sakura_a_alpha",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 5494,
+        "npot": false
+      },
+      {
+        "name": "Stairs_1_Emission",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 3753,
+        "npot": false
+      },
+      {
+        "name": "Grass_Emission",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 4455,
+        "npot": false
+      },
+      {
+        "name": "Lantern_pole_1_Emission",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 4066,
+        "npot": false
+      },
+      {
+        "name": "Stone_lantern_1_Emission",
+        "mime": "image/png",
+        "res": "2048x2048",
+        "px": 4194304,
+        "kb": 6852,
+        "npot": false
+      },
+      {
+        "name": "garden-winter-backdrop-night_2k_b7f970fe-c918-4d8a-bae8-f35c52d",
+        "mime": "image/png",
+        "res": "2048x1024",
+        "px": 2097152,
+        "kb": 2257,
+        "npot": false
+      },
+      {
+        "name": "defaultmaterial_emission",
+        "mime": "image/jpeg",
+        "res": "512x512",
+        "px": 262144,
+        "kb": 44,
+        "npot": false
+      },
+      {
+        "name": "defaultmaterial_zen",
+        "mime": "image/png",
+        "res": "512x512",
+        "px": 262144,
+        "kb": 207,
+        "npot": false
+      }
+    ],
+    "textureBytesMB": 42.99,
+    "textureVramMB": 268.7,
+    "maxTextureRes": "4096x4096",
+    "animations": [],
+    "skins": 0,
+    "jointCount": 0,
+    "skinned": false,
+    "morphTargets": 0,
+    "bbox": {
+      "min": [
+        -100.743,
+        -100,
+        -103.214
+      ],
+      "max": [
+        99.257,
+        100,
+        96.786
+      ],
+      "dim": [
+        200,
+        200,
+        200
+      ],
+      "center": [
+        -0.743,
+        0,
+        -3.214
+      ]
+    },
+    "maxDim": 200,
+    "originRel": {
+      "x": 0.504,
+      "y": 0.5,
+      "z": 0.516
+    },
+    "pivot": "fully centered",
+    "upAxisGuess": "Y (glTF standard)",
+    "scaleNote": "very large (200 units) — likely cm units or oversized, scale down",
+    "rootNodes": [
+      {
+        "name": "Sphere",
+        "t": [
+          -0.743,
+          0,
+          -3.214
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "sakuras",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Stairs_1",
+        "t": [
+          0,
+          -0.6,
+          -4.9
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Grass",
+        "t": [
+          0,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Pagoda_bake",
+        "t": [
+          -0.743,
+          0,
+          -3.214
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "lantern_instance",
+        "t": [
+          -1.863,
+          -4.812,
+          -14.255
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "lantern_instance.001",
+        "t": [
+          -1.962,
+          -3.8,
+          -11.854
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "lantern_instance.002",
+        "t": [
+          -1.89,
+          -2.739,
+          -9.456
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "lantern_instance.003",
+        "t": [
+          -1.833,
+          -5.003,
+          -18.054
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "lantern_instance.004",
+        "t": [
+          -1.859,
+          -1.162,
+          -6.137
+        ],
+        "r": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "s": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  }
+]
