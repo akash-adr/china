@@ -212,9 +212,16 @@ export const CHAPTERS: Chapter[] = [
     title: '塔顶',
     subtitle: 'The Summit',
     scrollVh: 195,   // 15%
-    camera: [[0, 16, -596], [0, 25, -622], [0, 36, -646], [0, 46, -666]],
-    lookAt: [[0, 20, -676], [0, 30, -740], [0, 44, -820], [0, 56, -890]],
-    hold: { at: 0.78, width: 0.3, slow: 0.22 },
+    // A single unbroken rise, with the keypoints bunching toward the end so
+    // the climb decelerates into stillness rather than stopping dead.
+    camera: [[0, 19, -598], [0, 30, -626], [0, 42, -652], [0, 51, -670],
+             [0, 56, -682]],
+    lookAt: [[0, 18, -700], [0, 26, -762], [0, 36, -832], [0, 44, -882],
+             [0, 47, -902]],
+    // Late and very slow. This is the only hold placed at the chapter's end:
+    // everywhere else the hold releases, here it is the ending, so the last
+    // stretch of scroll buys almost no movement and the final frame sits still.
+    hold: { at: 0.86, width: 0.34, slow: 0.1 },
     props: [
       // The 80 m scan, far back — only ever a fogged silhouette.
       // 82 x 80 x 102 m. Pushed far back: at 60 m it fills the frame and reads
