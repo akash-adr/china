@@ -185,9 +185,18 @@ export const CHAPTERS: Chapter[] = [
     title: '守护者',
     subtitle: 'The Guardian Awakens',
     scrollVh: 234,   // 18%
-    camera: [[34, 7.0, -426], [30, 12, -456], [19, 19, -486], [-2, 25, -516]],
-    lookAt: [[4, 3.0, -456], [0, 3.5, -470], [0, 5.0, -478], [0, 5.5, -490]],
-    hold: { at: 0.6, width: 0.3, slow: 0.24 },
+    // Two halves. The first three keypoints stay low (about 2 m) and barely
+    // move — the tension. Keypoints 4 and 5 are 24 m higher and 40 m back:
+    // the whole reveal happens in the last third of the scroll, which is what
+    // makes it the most violent move on the site.
+    camera: [[11, 2.1, -438], [9, 2.0, -450], [5.5, 2.3, -462],
+             [-5, 24, -492], [-15, 34, -518]],
+    // Searching: left, right, left again while low, then tilts up as the
+    // camera is yanked backwards.
+    lookAt: [[-9, 2.0, -456], [10, 1.8, -460], [-5, 2.1, -470],
+             [0, 7, -478], [0, 4, -482]],
+    // Held low and slow through the search, so the release carries everything.
+    hold: { at: 0.46, width: 0.38, slow: 0.15 },
     props: [
       // 40 m along Z — the longest object in the world.
       { modelId: 'chinese_dragon', position: [0, 0, -470], hero: true, label: 'dragon' },
