@@ -141,7 +141,7 @@ export const CHAPTERS: Chapter[] = [
       { modelId: 'fantasy_style_tree', position: [21, 0, -229], rotationY: 0.6, label: 'ginkgo' },
       // Close to the orbit so they sweep past the lens — at 20 m out they read
       // as scenery, at ~5 m clearance they read as parallax.
-      { modelId: 'broken_medieval_column_set', position: [-27, 0, -216], rotationY: -0.35, label: 'columns' },
+      { modelId: 'broken_medieval_column_set', position: [-19, 0, -215], rotationY: -0.35, label: 'columns' },
       { modelId: 'broken_medieval_column_set', position: [-33, 0, -252], rotationY: 1.1, label: 'columns' },
       { modelId: 'module_2_-_chinese_lantern', position: [6, 2.6, -224], label: 'lantern' },
       { modelId: 'stylized_rock', position: [13, 0, -248], label: 'rock' },
@@ -160,7 +160,7 @@ export const CHAPTERS: Chapter[] = [
     // keypoint 5 the exit — without an exit the spline swings wide toward
     // chapter 5's first keypoint 70 m away and clips the ground props.
     camera: [[0, 3.6, -340], [2.3, 1.5, -350], [1.8, 0.78, -354],
-             [1.1, 0.66, -356.4], [0.35, 0.9, -359.2], [3.5, 4.5, -374]],
+             [1.1, 0.66, -356.4], [0.48, 0.95, -358.9], [3.5, 4.5, -374]],
     // Aimed at the upper shaft throughout, so the frame is looking up at it.
     lookAt: [[0, 1.2, -358], [0, 1.5, -359.5], [0, 1.7, -360], [0, 1.75, -360],
              [0, 1.55, -360], [0, 2.5, -384]],
@@ -189,7 +189,7 @@ export const CHAPTERS: Chapter[] = [
     // move — the tension. Keypoints 4 and 5 are 24 m higher and 40 m back:
     // the whole reveal happens in the last third of the scroll, which is what
     // makes it the most violent move on the site.
-    camera: [[11, 2.1, -438], [9, 2.0, -450], [5.5, 2.3, -462],
+    camera: [[11, 2.1, -438], [9.5, 2.0, -450], [7.5, 2.3, -462],
              [-5, 24, -492], [-15, 34, -518]],
     // Searching: left, right, left again while low, then tilts up as the
     // camera is yanked backwards.
@@ -200,7 +200,7 @@ export const CHAPTERS: Chapter[] = [
     props: [
       // 40 m along Z — the longest object in the world.
       { modelId: 'chinese_dragon', position: [0, 0, -470], hero: true, label: 'dragon' },
-      { modelId: 'stylized_rock', position: [11, 0, -452], label: 'rock' },
+      { modelId: 'stylized_rock', position: [13.5, 0, -450], label: 'rock' },
       { modelId: 'stylized_rock', position: [-10, 0, -488], rotationY: 0.9, label: 'rock' },
       { modelId: 'broken_medieval_column_set', position: [14, 0, -478], rotationY: -0.8, label: 'columns' },
     ],
